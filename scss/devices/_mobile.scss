@@ -1,0 +1,104 @@
+@media (min-width: 300px) {
+
+
+  // FIRST SECTION 
+  .first_sec {
+    img {
+      width: 21em;
+      height: 21em;
+      @include bgBox('/img/yogurt02.jpg');
+    }
+    article {
+      h2, h3 {
+        text-align: center;
+        padding: 5%;
+      }
+      ol {
+        padding: 5% 10%;
+      }
+
+    }
+  }
+
+
+
+
+  // SECOND SECTION 
+  .second_sec {
+    text-align: center;
+
+    h2 {
+      padding: 5% 0%;
+    }
+
+    img {
+      width: 21em;
+      height: 21em;
+    }
+
+    .review01 {
+      img {
+        @include bgBox('/img/review05.png');
+      }
+    }
+
+    .review02 {
+      img {
+        @include bgBox('/img/review03.png');
+      }
+    }
+
+    .review03 {
+      img {
+        @include bgBox('/img/review01.png');
+      }
+    }
+
+    .review04 {
+      img {
+        @include bgBox('/img/review04.png');
+      }
+    }
+  }
+
+
+
+  // FOOTER 
+  footer {
+    div {
+      @include flexBox(row, center, center, 0px, 10px);
+      padding: 5% 2%;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .insta_logo {
+        img {
+          border-radius: 10px;
+          @include bgBox('/img/instagram.png');
+        }
+      }
+
+      .idus_logo {
+        img {
+          @include bgBox('/img/idus.png');
+        }
+      }
+
+      .naver_logo {
+        img {
+          @include bgBox('/img/naver.png');
+        }
+      }
+    }
+
+    p {
+      text-align: center;
+      padding: 2%;
+
+    }
+
+  }
+}

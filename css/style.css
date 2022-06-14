@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  padding: 0% 5%;
+  background-color: #f2ffd1;
+}
+
+#container {
+  background-color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 300px) {
+  .first_sec img {
+    width: 21em;
+    height: 21em;
+    background: url("/img/yogurt02.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .first_sec article h2, .first_sec article h3 {
+    text-align: center;
+    padding: 5%;
+  }
+  .first_sec article ol {
+    padding: 5% 10%;
+  }
+  .second_sec {
+    text-align: center;
+  }
+  .second_sec h2 {
+    padding: 5% 0%;
+  }
+  .second_sec img {
+    width: 21em;
+    height: 21em;
+  }
+  .second_sec .review01 img {
+    background: url("/img/review05.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .second_sec .review02 img {
+    background: url("/img/review03.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .second_sec .review03 img {
+    background: url("/img/review01.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .second_sec .review04 img {
+    background: url("/img/review04.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  footer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 0px;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 5% 2%;
+  }
+  footer div img {
+    width: 30px;
+    height: 30px;
+  }
+  footer div .insta_logo img {
+    border-radius: 10px;
+    background: url("/img/instagram.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  footer div .idus_logo img {
+    background: url("/img/idus.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  footer div .naver_logo img {
+    background: url("/img/naver.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  footer p {
+    text-align: center;
+    padding: 2%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

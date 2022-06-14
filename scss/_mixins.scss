@@ -1,0 +1,31 @@
+@mixin borderBox {
+  border-top: 2px solid gray ;
+}
+
+@mixin bgBox(
+  $bg,
+  $bgPosition : center,
+  $bgSize : cover,
+  $bgRepeat : no-repeat
+){
+  background: url($bg);
+  background-position: $bgPosition;
+  background-size: $bgSize;
+  background-repeat: $bgRepeat;
+}
+
+@mixin flexBox(
+  $direction : column,
+  $justifyContent : center,
+  $alignItems : center,
+  $rowGap : 0px,
+  $columnGap : 0px,
+  $wrap : nowrap
+){
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  row-gap: $rowGap;
+  column-gap: $columnGap;
+  flex-wrap: $wrap;
+}
