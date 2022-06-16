@@ -1,20 +1,130 @@
 @media (min-width: 300px) {
 
+  // NAVIGATION 
+  nav {
+    @include flexBox();
+    padding: 5%;
+
+    ul {
+      list-style: none;
+    }
+
+    .left_ul,
+    .right_ul {
+      display: none;
+    }
+
+    .logo_ul {
+      @include flexBox();
+
+      :first-child a {
+        text-decoration: none;
+        color: rgb(2, 173, 2);
+        font-size: 2em;
+        font-weight: 800;
+      }
+
+      img {
+        width: 4em;
+        height: 4em;
+
+      }
+    }
+
+    .hamburger_ul {
+      width: 100%;
+      @include flexBox(row, right);
+
+      img {
+        width: 3em;
+        height: 3em;
+      }
+    }
+  }
+
+  // HEADER 
+  header {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      object-fit: cover;
+      z-index: 0;
+      opacity: 0.5;
+    }
+
+    .header_title {
+      z-index: 1;
+      color: white;
+      text-shadow: 1px 1px rgb(118, 252, 178);
+      background-color: rgba(11, 36, 16, 0.1);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+
+      @include flexBox();
+
+      h1 {
+        font-size: 3em;
+        text-align: center;
+      }
+    }
+  }
+
+
+
 
   // FIRST SECTION 
   .first_sec {
     img {
-      width: 21em;
-      height: 21em;
-      @include bgBox('/img/yogurt02.jpg');
+      width: 100%;
+      height: 100%;
     }
+
+    h2 {
+      color: #50A890;
+      text-shadow: 1px 1px rgb(181, 240, 181);
+      text-align: center;
+      padding: 15% 0%;
+    }
+
     article {
-      h2, h3 {
+
+      h3 {
         text-align: center;
-        padding: 5%;
+        padding: 5% 0% 0% 0%;
+        color: #007691;
       }
-      ol {
+
+      ul {
         padding: 5% 10%;
+        color: #5F9191;
+        text-align: center;
+        list-style: none;
+        list-style-image: url(/img/check-mark1.png);
+        width: 80%;
+
+        li {
+          line-height: 1.5;
+        }
+
+        :nth-child(6) {
+          padding: 0% 0% 8% 0%;
+        }
+
+
+
+        a {
+          text-decoration: none;
+          background-color: #007691;
+          color: white;
+          padding: 2%;
+          border-radius: 5px;
+        }
       }
 
     }
@@ -26,72 +136,53 @@
   // SECOND SECTION 
   .second_sec {
     text-align: center;
+    color: #50A890;
+    text-shadow: 1px 1px rgb(181, 240, 181);
 
     h2 {
-      padding: 5% 0%;
+      padding: 15% 0% 5% 0%;
+    }
+
+    a:hover img {
+      opacity: 0.5;
     }
 
     img {
-      width: 21em;
-      height: 21em;
-    }
-
-    .review01 {
-      img {
-        @include bgBox('/img/review05.png');
-      }
-    }
-
-    .review02 {
-      img {
-        @include bgBox('/img/review03.png');
-      }
-    }
-
-    .review03 {
-      img {
-        @include bgBox('/img/review01.png');
-      }
-    }
-
-    .review04 {
-      img {
-        @include bgBox('/img/review04.png');
-      }
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
     }
   }
 
 
 
+
   // FOOTER 
   footer {
+    color: #5F9191;
+
     div {
       @include flexBox(row, center, center, 0px, 10px);
-      padding: 5% 2%;
+      padding: 10% 0%;
+
+      a:hover img {
+        opacity: 0.5;
+      }
 
       img {
-        width: 30px;
-        height: 30px;
+        width: 2em;
+        height: 2em;
+        opacity: 1;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
       }
+    }
 
-      .insta_logo {
-        img {
-          border-radius: 10px;
-          @include bgBox('/img/instagram.png');
-        }
-      }
-
-      .idus_logo {
-        img {
-          @include bgBox('/img/idus.png');
-        }
-      }
-
-      .naver_logo {
-        img {
-          @include bgBox('/img/naver.png');
-        }
-      }
+    hr {
+      text-align: center;
+      border: 1px double rgb(176, 245, 176);
     }
 
     p {

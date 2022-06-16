@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 body {
@@ -19,54 +20,174 @@ html {
 }
 
 @media (min-width: 300px) {
-  .first_sec img {
-    width: 21em;
-    height: 21em;
-    background: url("/img/yogurt02.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .first_sec article h2, .first_sec article h3 {
-    text-align: center;
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 0px;
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     padding: 5%;
   }
-  .first_sec article ol {
+  nav ul {
+    list-style: none;
+  }
+  nav .left_ul,
+  nav .right_ul {
+    display: none;
+  }
+  nav .logo_ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 0px;
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  nav .logo_ul :first-child a {
+    text-decoration: none;
+    color: #02ad02;
+    font-size: 2em;
+    font-weight: 800;
+  }
+  nav .logo_ul img {
+    width: 4em;
+    height: 4em;
+  }
+  nav .hamburger_ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 0px;
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  nav .hamburger_ul img {
+    width: 3em;
+    height: 3em;
+  }
+  header {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+  }
+  header img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: 0;
+    opacity: 0.5;
+  }
+  header .header_title {
+    z-index: 1;
+    color: white;
+    text-shadow: 1px 1px #76fcb2;
+    background-color: rgba(11, 36, 16, 0.1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 0px;
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  header .header_title h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+  .first_sec img {
+    width: 100%;
+    height: 100%;
+  }
+  .first_sec h2 {
+    color: #50A890;
+    text-shadow: 1px 1px #b5f0b5;
+    text-align: center;
+    padding: 15% 0%;
+  }
+  .first_sec article h3 {
+    text-align: center;
+    padding: 5% 0% 0% 0%;
+    color: #007691;
+  }
+  .first_sec article ul {
     padding: 5% 10%;
+    color: #5F9191;
+    text-align: center;
+    list-style: none;
+    list-style-image: url(/img/check-mark1.png);
+    width: 80%;
+  }
+  .first_sec article ul li {
+    line-height: 1.5;
+  }
+  .first_sec article ul :nth-child(6) {
+    padding: 0% 0% 8% 0%;
+  }
+  .first_sec article ul a {
+    text-decoration: none;
+    background-color: #007691;
+    color: white;
+    padding: 2%;
+    border-radius: 5px;
   }
   .second_sec {
     text-align: center;
+    color: #50A890;
+    text-shadow: 1px 1px #b5f0b5;
   }
   .second_sec h2 {
-    padding: 5% 0%;
+    padding: 15% 0% 5% 0%;
+  }
+  .second_sec a:hover img {
+    opacity: 0.5;
   }
   .second_sec img {
-    width: 21em;
-    height: 21em;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
-  .second_sec .review01 img {
-    background: url("/img/review05.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .second_sec .review02 img {
-    background: url("/img/review03.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .second_sec .review03 img {
-    background: url("/img/review01.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .second_sec .review04 img {
-    background: url("/img/review04.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  footer {
+    color: #5F9191;
   }
   footer div {
     display: -webkit-box;
@@ -83,30 +204,21 @@ html {
             column-gap: 10px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    padding: 5% 2%;
+    padding: 10% 0%;
+  }
+  footer div a:hover img {
+    opacity: 0.5;
   }
   footer div img {
-    width: 30px;
-    height: 30px;
+    width: 2em;
+    height: 2em;
+    opacity: 1;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
-  footer div .insta_logo img {
-    border-radius: 10px;
-    background: url("/img/instagram.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  footer div .idus_logo img {
-    background: url("/img/idus.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  footer div .naver_logo img {
-    background: url("/img/naver.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  footer hr {
+    text-align: center;
+    border: 1px double #b0f5b0;
   }
   footer p {
     text-align: center;
