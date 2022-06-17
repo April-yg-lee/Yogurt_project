@@ -6,17 +6,24 @@
   font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
-body {
-  padding: 0% 5%;
-  background-color: #f2ffd1;
-}
-
-#container {
-  background-color: white;
-}
-
 html {
   scroll-behavior: smooth;
+}
+
+@media (min-width: 300px) {
+  body {
+    padding: 0% 5%;
+    background-color: #f2ffd1;
+  }
+  #container {
+    background-color: white;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    padding: 0% 10%;
+  }
 }
 
 @media (min-width: 300px) {
@@ -40,8 +47,7 @@ html {
   nav ul {
     list-style: none;
   }
-  nav .left_ul,
-  nav .right_ul {
+  nav .menu_ul {
     display: none;
   }
   nav .logo_ul {
@@ -281,14 +287,65 @@ html {
   }
   .second_sec img {
     width: 49%;
-    height: 35vh;
+    height: 300px;
   }
   footer div img {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
   }
   footer p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  nav .hamburger_ul {
+    display: none;
+  }
+  nav .menu_ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+  }
+  nav .menu_ul a {
+    text-decoration: none;
+    color: #163029;
+  }
+  nav .menu_ul a:hover {
+    background-color: #dffb97;
+    border-radius: 5px;
+  }
+  .first_sec img {
+    width: 49%;
+    height: 40vh;
+    float: right;
+  }
+  .first_sec article {
+    width: 49%;
+  }
+  .first_sec article h3 {
+    padding-top: 0;
     font-size: 25px;
+  }
+  .first_sec article ul {
+    font-size: 20px;
+  }
+  .second_sec {
+    clear: right;
+    text-align: center;
+    color: #50A890;
+    text-shadow: 1px 1px #b5f0b5;
+  }
+  .second_sec h2 {
+    padding: 15% 0% 5% 0%;
+  }
+  .second_sec img {
+    width: 24%;
+    height: 30vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

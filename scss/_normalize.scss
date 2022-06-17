@@ -5,15 +5,26 @@
   font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
-body {
-  padding: 0% 5%;
-  background-color: #f2ffd1;
-}
-
-#container {
-  background-color: white;
-}
-
 html {
   scroll-behavior: smooth;
 }
+
+@media (min-width: 300px) {
+
+  body {
+    padding: 0% 5%;
+    background-color: #f2ffd1;
+  }
+  
+  #container {
+    background-color: white;
+  }
+}
+
+@media (min-width: 1000px) {
+
+  body {
+    padding: 0% 10%;
+}
+}
+
