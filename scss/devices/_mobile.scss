@@ -1,3 +1,4 @@
+// mobile version 
 @media (min-width: 300px) {
 
   // NAVIGATION 
@@ -77,7 +78,6 @@
 
 
 
-
   // FIRST SECTION 
   .first_sec {
     img {
@@ -131,8 +131,6 @@
   }
 
 
-
-
   // SECOND SECTION 
   .second_sec {
     text-align: center;
@@ -144,7 +142,29 @@
     }
 
     a:hover img {
-      opacity: 0.5;
+      opacity: 1;
+      -webkit-animation: flash 1.5s;
+      animation: flash 1.5s;
+
+      @-webkit-keyframes flash {
+        0% {
+          opacity: .4;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes flash {
+        0% {
+          opacity: .4;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
     }
 
     img {
@@ -157,8 +177,6 @@
   }
 
 
-
-
   // FOOTER 
   footer {
     color: #5F9191;
@@ -168,15 +186,17 @@
       padding: 10% 0%;
 
       a:hover img {
-        opacity: 0.5;
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
       }
 
       img {
         width: 2em;
         height: 2em;
-        opacity: 1;
-        -webkit-transition: 0.3s ease-in-out;
-        transition: 0.3s ease-in-out;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
       }
     }
 
@@ -193,3 +213,4 @@
 
   }
 }
+
