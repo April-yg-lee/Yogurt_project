@@ -348,4 +348,11 @@ html {
     height: 30vh;
   }
 }
+
+@media (min-width: 1500px) {
+  .second_sec img {
+    width: 24%;
+    height: 300px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
