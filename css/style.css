@@ -256,14 +256,14 @@ html {
 }
 
 @media (min-width: 300px) {
-  main section {
+  #ourStory_container main section {
     padding-bottom: 20vh;
   }
-  main section img {
+  #ourStory_container main section img {
     width: 100%;
     height: 100%;
   }
-  main section article {
+  #ourStory_container main section article {
     padding: 3%;
   }
   #ourStory_container h2 {
@@ -280,8 +280,14 @@ html {
   #ourStory_container .philosophy_sec {
     padding-bottom: 20vh;
   }
+  #ourStory_container .whyodoc_sec {
+    padding: 0;
+  }
+  #ourStory_container .whyodoc_sec h2 {
+    padding: 3%;
+  }
   #ourStory_container .whyodoc_sec p {
-    padding-bottom: 3%;
+    padding-bottom: 2%;
   }
 }
 
@@ -399,19 +405,67 @@ html {
 }
 
 @media (min-width: 1000px) {
-  #ourStory_container main section div {
+  #ourStory_container main h2 {
+    font-size: 40px;
+  }
+  #ourStory_container main p {
+    font-size: 20px;
+  }
+  #ourStory_container main .history_sec div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border: 1px solid red;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 0px;
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
-  #ourStory_container main section div img {
+  #ourStory_container main .history_sec div img {
+    width: 50%;
+  }
+  #ourStory_container main .philosophy_sec div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 0px;
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  #ourStory_container main .philosophy_sec div img {
     width: 50%;
   }
 }
 
 @media (min-width: 1500px) {
   #home_container .second_sec img {
+    width: 24%;
+    height: 300px;
+  }
+}
+
+@media (min-width: 1500px) {
+  #ourStory_container main section h2 {
+    font-size: 60px;
+  }
+  #ourStory_container main section p {
+    font-size: 25px;
+  }
+  #ourStory_container main img {
     width: 24%;
     height: 300px;
   }

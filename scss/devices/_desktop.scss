@@ -81,23 +81,34 @@
 @media (min-width: 1000px) {
   #ourStory_container {
     main {
-      section {
+      h2 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 20px;
+      }
+      .history_sec {
         div {
-          display: flex;
-          border: 1px solid red;
+          @include flexBox(row,center,center);
+
+          img {
+            width: 50%;
+          }
+
+        }
+      }
+      .philosophy_sec {
+        div {
+          @include flexBox(row,center,center);
+          article {
+          }
           img {
             width: 50%;
           }
         }
       }
-      .philosophy_sec {
-        p {
-        }
-      }
+   
     }
-  } 
+
+  }
 }
-
-
-
-// trial commit in revised_detail branch

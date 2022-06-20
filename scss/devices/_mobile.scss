@@ -231,6 +231,7 @@
 
 // ourStory page 
 @media (min-width: 300px) {
+  #ourStory_container {
   main {
     section {
       img {
@@ -243,7 +244,6 @@
        }
     }
   }
-  #ourStory_container {
     h2 {
       color: #007691;
       font-size: 35px;
@@ -262,9 +262,13 @@
     }
 
     .whyodoc_sec {
+      h2 {
+        padding: 3%;
+      }
        p {
-        padding-bottom: 3%;
+        padding-bottom: 2%;
        }
+       padding: 0;
     }
   }
 }
