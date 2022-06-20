@@ -256,6 +256,16 @@ html {
 }
 
 @media (min-width: 300px) {
+  main section {
+    padding-bottom: 20vh;
+  }
+  main section img {
+    width: 100%;
+    height: 100%;
+  }
+  main section article {
+    padding: 3%;
+  }
   #ourStory_container h2 {
     color: #007691;
     font-size: 35px;
@@ -267,32 +277,8 @@ html {
     color: #059c65;
     font-weight: 800;
   }
-  #ourStory_container .history_sec {
-    padding-bottom: 20vh;
-  }
-  #ourStory_container .history_sec img {
-    width: 100%;
-    height: 100%;
-  }
-  #ourStory_container .history_sec article {
-    padding: 3%;
-  }
   #ourStory_container .philosophy_sec {
     padding-bottom: 20vh;
-  }
-  #ourStory_container .philosophy_sec img {
-    width: 100%;
-    height: 100%;
-  }
-  #ourStory_container .philosophy_sec article {
-    padding: 3%;
-  }
-  #ourStory_container .whyodoc_sec img {
-    width: 100%;
-    height: 100%;
-  }
-  #ourStory_container .whyodoc_sec article {
-    padding: 3%;
   }
   #ourStory_container .whyodoc_sec p {
     padding-bottom: 3%;
@@ -355,10 +341,12 @@ html {
 }
 
 @media (min-width: 1000px) {
-  #home_container nav .hamburger_ul, #ourStory_container nav .hamburger_ul {
+  #home_container nav .hamburger_ul,
+  #ourStory_container nav .hamburger_ul {
     display: none;
   }
-  #home_container nav .menu_ul, #ourStory_container nav .menu_ul {
+  #home_container nav .menu_ul,
+  #ourStory_container nav .menu_ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -367,11 +355,13 @@ html {
             justify-content: space-evenly;
     width: 100%;
   }
-  #home_container nav .menu_ul a, #ourStory_container nav .menu_ul a {
+  #home_container nav .menu_ul a,
+  #ourStory_container nav .menu_ul a {
     text-decoration: none;
     color: #163029;
   }
-  #home_container nav .menu_ul a:hover, #ourStory_container nav .menu_ul a:hover {
+  #home_container nav .menu_ul a:hover,
+  #ourStory_container nav .menu_ul a:hover {
     background-color: #dffb97;
     border-radius: 5px;
   }
@@ -405,6 +395,18 @@ html {
   #home_container .second_sec img {
     width: 24%;
     height: 30vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  #ourStory_container main section div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid red;
+  }
+  #ourStory_container main section div img {
+    width: 50%;
   }
 }
 

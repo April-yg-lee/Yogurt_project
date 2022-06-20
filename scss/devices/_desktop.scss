@@ -1,71 +1,102 @@
+// homepage
 @media (min-width: 1000px) {
 
   // NAVIGATION 
-  #home_container, #ourStory_container {
-  nav {
-    .hamburger_ul {
-      display: none;
-    }
-    .menu_ul {
-      display:flex;
-      justify-content: space-evenly;
-      width: 100%;
-      a {
-        text-decoration: none;
-        color:#163029;
+  #home_container,
+  #ourStory_container {
+    nav {
+      .hamburger_ul {
+        display: none;
       }
-      a:hover {
-        background-color: #dffb97;
-        border-radius: 5px;
+
+      .menu_ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+
+        a {
+          text-decoration: none;
+          color: #163029;
+        }
+
+        a:hover {
+          background-color: #dffb97;
+          border-radius: 5px;
+        }
       }
     }
   }
-  }
-  
+
   // FIRST SECTION 
   #home_container {
-  .first_sec {
+    .first_sec {
 
-    div {
-      display: flex;
+      div {
+        display: flex;
 
-    img {
-      width: 49%;
-      height: 100%;
-    }
+        img {
+          width: 49%;
+          height: 100%;
+        }
 
-    article {
-      width: 49%;
+        article {
+          width: 49%;
 
-      h3 {
-        padding-top: 0;
-        font-size: 25px;
-      }
+          h3 {
+            padding-top: 0;
+            font-size: 25px;
+          }
 
-      ul {
-        font-size: 20px;
+          ul {
+            font-size: 20px;
+          }
+        }
       }
     }
   }
-  }
-}
 
 
   // SECOND SECTION 
   #home_container {
-  .second_sec {
-    text-align: center;
-    color: #50A890;
-    text-shadow: 1px 1px rgb(181, 240, 181);
+    .second_sec {
+      text-align: center;
+      color: #50A890;
+      text-shadow: 1px 1px rgb(181, 240, 181);
 
-    h2 {
-      padding: 15% 0% 5% 0%;
-    }
+      h2 {
+        padding: 15% 0% 5% 0%;
+      }
 
-    img {
-      width: 24%;
-      height: 30vh;
+      img {
+        width: 24%;
+        height: 30vh;
+      }
     }
   }
 }
+
+
+
+// ourStory page 
+@media (min-width: 1000px) {
+  #ourStory_container {
+    main {
+      section {
+        div {
+          display: flex;
+          border: 1px solid red;
+          img {
+            width: 50%;
+          }
+        }
+      }
+      .philosophy_sec {
+        p {
+        }
+      }
+    }
+  } 
 }
+
+
+
