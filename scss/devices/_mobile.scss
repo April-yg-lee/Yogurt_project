@@ -2,7 +2,7 @@
 @media (min-width: 300px) {
 
   // NAVIGATION 
-  #home_container, #ourStory_container {
+  #home_container, #ourStory_container, #menu_container {
     nav {
       @include flexBox();
       padding: 5%;
@@ -141,7 +141,7 @@
 
 
   // SECOND SECTION 
-  #home_container {
+  #home_container, #menu_container {
   .second_sec {
     text-align: center;
     color: #50A890;
@@ -189,7 +189,7 @@
 
 
   // FOOTER 
-  #home_container, #ourStory_container {
+  #home_container, #ourStory_container, #menu_container {
   footer {
     color: #5F9191;
 
@@ -270,5 +270,35 @@
        }
        padding: 0;
     }
+  }
+}
+
+
+
+
+// menu page
+
+@media (min-width: 300px) {
+  #menu_container {
+    h1 {
+      text-align: center;
+    }
+    .first_sec {
+      padding: 5%;
+      h3 {
+        color: rgb(57, 56, 56);
+      }
+      .cheese_art {
+        padding: 5%;
+        border: 1px dotted  rgb(1, 102, 1);
+      }
+      .yogurt_art {
+        padding: 5%;
+        border: 1px dotted rgb(1, 102, 1);
+        border-top: 1px solid transparent;
+      }
+    }
+
+
   }
 }

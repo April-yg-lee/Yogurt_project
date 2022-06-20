@@ -2,7 +2,7 @@
 @media (min-width: 700px) {
 
   // NAVIGATION 
-  #home_container, #ourStory_container {
+  #home_container, #ourStory_container, #menu_container {
   nav {
     .logo_ul {
 
@@ -67,7 +67,7 @@
 }
 
   // SECOND SECTION 
-  #home_container {
+  #home_container, #menu_container {
   .second_sec {
 
     h2 {
@@ -82,7 +82,7 @@
 }
 
   // FOOTER 
-  #home_container, #ourStory_container {
+  #home_container, #ourStory_container, #menu_container {
   footer {
     div {
       img {
@@ -112,3 +112,23 @@
 }
 
 
+// menu page
+
+@media (min-width: 700px) {
+  #menu_container {
+    h1 {
+      font-size: 50px;
+    }
+    .first_sec {
+      padding: 5%;
+      h2 {
+        font-size: 40px;
+      }
+      h3 {
+        font-size: 25px;
+      }
+    }
+
+
+  }
+}
