@@ -1,7 +1,7 @@
 @media (min-width: 1000px) {
 
   // NAVIGATION 
-  #home_container {
+  #home_container, #ourStory_container {
   nav {
     .hamburger_ul {
       display: none;
@@ -20,8 +20,10 @@
       }
     }
   }
+  }
   
   // FIRST SECTION 
+  #home_container {
   .first_sec {
 
     div {
@@ -46,9 +48,11 @@
     }
   }
   }
+}
 
 
   // SECOND SECTION 
+  #home_container {
   .second_sec {
     text-align: center;
     color: #50A890;

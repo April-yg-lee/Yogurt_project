@@ -16,8 +16,12 @@ html {
     background-color: #f2ffd1;
   }
   
-  #home_container {
+  #home_container, #ourStory_container {
     background-color: white;
+  }
+
+  #ourStory_container {
+    color: rgb(73, 72, 72);
   }
 }
 

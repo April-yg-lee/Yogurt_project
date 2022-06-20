@@ -1,7 +1,8 @@
+// home page 
 @media (min-width: 300px) {
 
   // NAVIGATION 
-  #home_container {
+  #home_container, #ourStory_container {
     nav {
       @include flexBox();
       padding: 5%;
@@ -41,8 +42,10 @@
         }
       }
     }
+  }
 
   // HEADER 
+  #home_container {
     header {
       width: 100%;
       height: 40vh;
@@ -74,10 +77,12 @@
         }
       }
     }
+  }
 
 
 
   // FIRST SECTION 
+  #home_container {
     main {
       .first_sec {
         img {
@@ -130,11 +135,13 @@
         }
       }
     }
+  }
   
 
 
 
   // SECOND SECTION 
+  #home_container {
   .second_sec {
     text-align: center;
     color: #50A890;
@@ -178,9 +185,11 @@
       transition: 0.3s ease-in-out;
     }
   }
+}
 
 
   // FOOTER 
+  #home_container, #ourStory_container {
   footer {
     color: #5F9191;
 
@@ -216,4 +225,59 @@
 
   }
 }
+}
+
+
+
+// ourStory page 
+@media (min-width: 300px) {
+  #ourStory_container {
+    h2 {
+      color: #007691;
+      font-size: 35px;
+    }
+    .skyblue {
+      color: #00ACC7;
+    }
+    .deepgreen {
+      color: #059c65;
+      font-weight: 800;
+    }
+    .history_sec{
+     img {
+      width: 100%;
+      height: 100%;
+     }
+     padding-bottom: 20vh;
+     article {
+      padding: 3%;
+     }
+    }
+
+    .philosophy_sec {
+      img {
+        width: 100%;
+        height: 100%;
+       }
+       padding-bottom: 20vh;
+       article {
+        padding: 3%;
+       }
+
+    }
+
+    .whyodoc_sec {
+      img {
+        width: 100%;
+        height: 100%;
+       }
+       article {
+        padding: 3%;
+       }
+      
+       p {
+        padding-bottom: 3%;
+       }
+    }
+  }
 }

@@ -1,8 +1,8 @@
+// homepage
 @media (min-width: 700px) {
 
-
   // NAVIGATION 
-  #home_container {
+  #home_container, #ourStory_container {
   nav {
     .logo_ul {
 
@@ -24,9 +24,11 @@
       }
     }
   }
+}
 
   
   // HEADER 
+  #home_container {
   header {
     height: 60vh;
 
@@ -36,8 +38,10 @@
       }
     }
   }
+  }
 
   // FIRST SECTION 
+  #home_container {
   .first_sec {
 
     h2 {
@@ -60,8 +64,10 @@
 
     }
   }
+}
 
   // SECOND SECTION 
+  #home_container {
   .second_sec {
 
     h2 {
@@ -73,8 +79,10 @@
       height: 300px;
     }
   }
+}
 
   // FOOTER 
+  #home_container, #ourStory_container {
   footer {
     div {
       img {
@@ -89,3 +97,18 @@
   }
 }
 }
+
+// ourStory page
+@media (min-width: 700px) {
+  #ourStory_container {
+    h2 {
+      font-size: 70px;
+    }
+
+    p {
+      font-size: 25px;
+    }
+  }
+}
+
+
