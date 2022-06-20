@@ -1,5 +1,7 @@
+// homepage
 @media (min-width: 300px) {
 
+  #home_container, #ourStory_container {
   // NAVIGATION 
   nav {
     @include flexBox();
@@ -41,7 +43,9 @@
       }
     }
   }
+  }
 
+  #home_container {
   // HEADER 
   header {
     width: 100%;
@@ -74,11 +78,13 @@
       }
     }
   }
+  }
 
 
 
 
   // FIRST SECTION 
+  #home_container {
   .first_sec {
     img {
       width: 100%;
@@ -129,11 +135,12 @@
 
     }
   }
-
+  }
 
 
 
   // SECOND SECTION 
+  #home_container {
   .second_sec {
     text-align: center;
     color: #50A890;
@@ -155,11 +162,13 @@
       transition: 0.3s ease-in-out;
     }
   }
+  }
 
 
 
 
   // FOOTER 
+  #home_container, #ourStory_container {
   footer {
     color: #5F9191;
 
@@ -192,4 +201,5 @@
     }
 
   }
+}
 }
