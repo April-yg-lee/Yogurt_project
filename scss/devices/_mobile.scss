@@ -1,132 +1,137 @@
 @media (min-width: 300px) {
 
   // NAVIGATION 
-  nav {
-    @include flexBox();
-    padding: 5%;
-
-    ul {
-      list-style: none;
-    }
-
-    .menu_ul {
-      display: none;
-    }
-
-    .logo_ul {
+  #home_container {
+    nav {
       @include flexBox();
+      padding: 5%;
 
-      :first-child a {
-        text-decoration: none;
-        color: rgb(2, 173, 2);
-        font-size: 2em;
-        font-weight: 800;
+      ul {
+        list-style: none;
       }
 
-      img {
-        width: 4em;
-        height: 4em;
+      .menu_ul {
+        display: none;
+      }
 
+      .logo_ul {
+        @include flexBox();
+
+        :first-child a {
+          text-decoration: none;
+          color: rgb(2, 173, 2);
+          font-size: 2em;
+          font-weight: 800;
+        }
+
+        img {
+          width: 4em;
+          height: 4em;
+
+        }
+      }
+
+      .hamburger_ul {
+        width: 100%;
+        @include flexBox(row, right);
+
+        img {
+          width: 3em;
+          height: 3em;
+        }
       }
     }
-
-    .hamburger_ul {
-      width: 100%;
-      @include flexBox(row, right);
-
-      img {
-        width: 3em;
-        height: 3em;
-      }
-    }
-  }
 
   // HEADER 
-  header {
-    width: 100%;
-    height: 40vh;
-    position: relative;
-
-    img {
+    header {
       width: 100%;
-      height: 100%;
-      position: absolute;
-      object-fit: cover;
-      z-index: 0;
-      opacity: 0.5;
-    }
+      height: 40vh;
+      position: relative;
 
-    .header_title {
-      z-index: 1;
-      color: white;
-      text-shadow: 1px 1px rgb(118, 252, 178);
-      background-color: rgba(11, 36, 16, 0.1);
-      width: 100%;
-      height: 100%;
-      position: absolute;
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        z-index: 0;
+        opacity: 0.5;
+      }
 
-      @include flexBox();
+      .header_title {
+        z-index: 1;
+        color: white;
+        text-shadow: 1px 1px rgb(118, 252, 178);
+        background-color: rgba(11, 36, 16, 0.1);
+        width: 100%;
+        height: 100%;
+        position: absolute;
 
-      h1 {
-        font-size: 3em;
-        text-align: center;
+        @include flexBox();
+
+        h1 {
+          font-size: 3em;
+          text-align: center;
+        }
       }
     }
-  }
 
 
 
   // FIRST SECTION 
-  .first_sec {
-    img {
-      width: 100%;
-      height: 100%;
-    }
+    main {
+      .first_sec {
+        img {
+          width: 100%;
+          height: 100%;
+        }
 
-    h2 {
-      color: #50A890;
-      text-shadow: 1px 1px rgb(181, 240, 181);
-      text-align: center;
-      padding: 15% 0%;
-    }
+        h2 {
+          color: #50A890;
+          text-shadow: 1px 1px rgb(181, 240, 181);
+          text-align: center;
+          padding: 15% 0%;
+        }
 
-    article {
+        article {
 
-      h3 {
-        text-align: center;
-        padding: 5% 0% 0% 0%;
-        color: #007691;
+          h3 {
+            text-align: center;
+            padding: 5% 0% 0% 0%;
+            color: #007691;
+          }
+
+          ul {
+            padding: 5% 10%;
+            color: #5F9191;
+            text-align: center;
+            list-style: none;
+            list-style-image: url(/img/check-mark1.png);
+            width: 80%;
+
+            li {
+              line-height: 1.5;
+            }
+
+            :nth-child(6) {
+              padding: 0% 0% 8% 0%;
+            }
+
+
+
+            a {
+              text-decoration: none;
+              background-color: #007691;
+              color: white;
+              padding: 2%;
+              border-radius: 5px;
+            }
+          }
+
+        }
       }
-
-      ul {
-        padding: 5% 10%;
-        color: #5F9191;
-        text-align: center;
-        list-style: none;
-        list-style-image: url(/img/check-mark1.png);
-        width: 80%;
-
-        li {
-          line-height: 1.5;
-        }
-
-        :nth-child(6) {
-          padding: 0% 0% 8% 0%;
-        }
-
-
-
-        a {
-          text-decoration: none;
-          background-color: #007691;
-          color: white;
-          padding: 2%;
-          border-radius: 5px;
-        }
-      }
-
     }
-  }
+  
+
 
 
   // SECOND SECTION 
@@ -211,4 +216,4 @@
 
   }
 }
-
+}

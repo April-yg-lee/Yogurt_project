@@ -15,7 +15,7 @@ html {
     padding: 0% 5%;
     background-color: #f2ffd1;
   }
-  #container {
+  #home_container {
     background-color: white;
   }
 }
@@ -27,7 +27,7 @@ html {
 }
 
 @media (min-width: 300px) {
-  nav {
+  #home_container nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -44,13 +44,13 @@ html {
         flex-wrap: nowrap;
     padding: 5%;
   }
-  nav ul {
+  #home_container nav ul {
     list-style: none;
   }
-  nav .menu_ul {
+  #home_container nav .menu_ul {
     display: none;
   }
-  nav .logo_ul {
+  #home_container nav .logo_ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -66,17 +66,17 @@ html {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  nav .logo_ul :first-child a {
+  #home_container nav .logo_ul :first-child a {
     text-decoration: none;
     color: #02ad02;
     font-size: 2em;
     font-weight: 800;
   }
-  nav .logo_ul img {
+  #home_container nav .logo_ul img {
     width: 4em;
     height: 4em;
   }
-  nav .hamburger_ul {
+  #home_container nav .hamburger_ul {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -93,16 +93,16 @@ html {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  nav .hamburger_ul img {
+  #home_container nav .hamburger_ul img {
     width: 3em;
     height: 3em;
   }
-  header {
+  #home_container header {
     width: 100%;
     height: 40vh;
     position: relative;
   }
-  header img {
+  #home_container header img {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -111,7 +111,7 @@ html {
     z-index: 0;
     opacity: 0.5;
   }
-  header .header_title {
+  #home_container header .header_title {
     z-index: 1;
     color: white;
     text-shadow: 1px 1px #76fcb2;
@@ -134,26 +134,26 @@ html {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  header .header_title h1 {
+  #home_container header .header_title h1 {
     font-size: 3em;
     text-align: center;
   }
-  .first_sec img {
+  #home_container main .first_sec img {
     width: 100%;
     height: 100%;
   }
-  .first_sec h2 {
+  #home_container main .first_sec h2 {
     color: #50A890;
     text-shadow: 1px 1px #b5f0b5;
     text-align: center;
     padding: 15% 0%;
   }
-  .first_sec article h3 {
+  #home_container main .first_sec article h3 {
     text-align: center;
     padding: 5% 0% 0% 0%;
     color: #007691;
   }
-  .first_sec article ul {
+  #home_container main .first_sec article ul {
     padding: 5% 10%;
     color: #5F9191;
     text-align: center;
@@ -161,28 +161,28 @@ html {
     list-style-image: url(/img/check-mark1.png);
     width: 80%;
   }
-  .first_sec article ul li {
+  #home_container main .first_sec article ul li {
     line-height: 1.5;
   }
-  .first_sec article ul :nth-child(6) {
+  #home_container main .first_sec article ul :nth-child(6) {
     padding: 0% 0% 8% 0%;
   }
-  .first_sec article ul a {
+  #home_container main .first_sec article ul a {
     text-decoration: none;
     background-color: #007691;
     color: white;
     padding: 2%;
     border-radius: 5px;
   }
-  .second_sec {
+  #home_container .second_sec {
     text-align: center;
     color: #50A890;
     text-shadow: 1px 1px #b5f0b5;
   }
-  .second_sec h2 {
+  #home_container .second_sec h2 {
     padding: 15% 0% 5% 0%;
   }
-  .second_sec a:hover img {
+  #home_container .second_sec a:hover img {
     opacity: 1;
     -webkit-animation: flash 1.5s;
     animation: flash 1.5s;
@@ -203,17 +203,17 @@ html {
       opacity: 1;
     }
   }
-  .second_sec img {
+  #home_container .second_sec img {
     width: 100%;
     height: 100%;
     opacity: 1;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
-  footer {
+  #home_container footer {
     color: #5F9191;
   }
-  footer div {
+  #home_container footer div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -230,11 +230,11 @@ html {
         flex-wrap: nowrap;
     padding: 10% 0%;
   }
-  footer div a:hover img {
+  #home_container footer div a:hover img {
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
   }
-  footer div img {
+  #home_container footer div img {
     width: 2em;
     height: 2em;
     -webkit-transform: scale(1);
@@ -242,67 +242,67 @@ html {
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
   }
-  footer hr {
+  #home_container footer hr {
     text-align: center;
     border: 1px double #b0f5b0;
   }
-  footer p {
+  #home_container footer p {
     text-align: center;
     padding: 2%;
   }
 }
 
 @media (min-width: 700px) {
-  nav .logo_ul :first-child a {
+  #home_container nav .logo_ul :first-child a {
     font-size: 2.5em;
   }
-  nav .logo_ul img {
+  #home_container nav .logo_ul img {
     width: 6em;
     height: 6em;
   }
-  nav .hamburger_ul img {
+  #home_container nav .hamburger_ul img {
     width: 3.5em;
     height: 3.5em;
   }
-  header {
+  #home_container header {
     height: 60vh;
   }
-  header .header_title h1 {
+  #home_container header .header_title h1 {
     font-size: 4em;
   }
-  .first_sec h2 {
+  #home_container .first_sec h2 {
     font-size: 35px;
   }
-  .first_sec article h3 {
+  #home_container .first_sec article h3 {
     font-size: 30px;
   }
-  .first_sec article ul {
+  #home_container .first_sec article ul {
     font-size: 23px;
   }
-  .first_sec article ul a {
+  #home_container .first_sec article ul a {
     border-radius: 10px;
   }
-  .second_sec h2 {
+  #home_container .second_sec h2 {
     font-size: 35px;
   }
-  .second_sec img {
+  #home_container .second_sec img {
     width: 49%;
     height: 300px;
   }
-  footer div img {
+  #home_container footer div img {
     width: 35px;
     height: 35px;
   }
-  footer p {
+  #home_container footer p {
     font-size: 20px;
   }
 }
 
 @media (min-width: 1000px) {
-  nav .hamburger_ul {
+  #home_container nav .hamburger_ul {
     display: none;
   }
-  nav .menu_ul {
+  #home_container nav .menu_ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -311,46 +311,49 @@ html {
             justify-content: space-evenly;
     width: 100%;
   }
-  nav .menu_ul a {
+  #home_container nav .menu_ul a {
     text-decoration: none;
     color: #163029;
   }
-  nav .menu_ul a:hover {
+  #home_container nav .menu_ul a:hover {
     background-color: #dffb97;
     border-radius: 5px;
   }
-  .first_sec img {
-    width: 49%;
-    height: 40vh;
-    float: right;
+  #home_container .first_sec div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  .first_sec article {
+  #home_container .first_sec div img {
+    width: 49%;
+    height: 100%;
+  }
+  #home_container .first_sec div article {
     width: 49%;
   }
-  .first_sec article h3 {
+  #home_container .first_sec div article h3 {
     padding-top: 0;
     font-size: 25px;
   }
-  .first_sec article ul {
+  #home_container .first_sec div article ul {
     font-size: 20px;
   }
-  .second_sec {
-    clear: right;
+  #home_container .second_sec {
     text-align: center;
     color: #50A890;
     text-shadow: 1px 1px #b5f0b5;
   }
-  .second_sec h2 {
+  #home_container .second_sec h2 {
     padding: 15% 0% 5% 0%;
   }
-  .second_sec img {
+  #home_container .second_sec img {
     width: 24%;
     height: 30vh;
   }
 }
 
 @media (min-width: 1500px) {
-  .second_sec img {
+  #home_container .second_sec img {
     width: 24%;
     height: 300px;
   }
