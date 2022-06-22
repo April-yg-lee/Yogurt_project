@@ -4,7 +4,8 @@
   // NAVIGATION 
   #home_container,
   #ourStory_container,
-  #menu_container {
+  #menu_container,
+  #location_container {
     nav {
       .hamburger_ul {
         display: none;
@@ -58,7 +59,8 @@
 
 
   // SECOND SECTION 
-  #home_container, #menu_container {
+  #home_container,
+  #menu_container {
     .second_sec {
       text-align: center;
       color: #50A890;
@@ -85,12 +87,14 @@
       h2 {
         font-size: 40px;
       }
+
       p {
         font-size: 20px;
       }
+
       .history_sec {
         div {
-          @include flexBox(row,center,center);
+          @include flexBox(row, center, center);
 
           img {
             width: 50%;
@@ -98,17 +102,19 @@
 
         }
       }
+
       .philosophy_sec {
         div {
-          @include flexBox(row,center,center);
-          article {
-          }
+          @include flexBox(row, center, center);
+
+          article {}
+
           img {
             width: 50%;
           }
         }
       }
-   
+
     }
 
   }
@@ -121,11 +127,42 @@
     .first_sec {
       display: flex;
       justify-content: space-evenly;
-    .yogurt_art {
-      border-top: 1px dotted rgb(1, 102, 1);
-    }
+
+      .yogurt_art {
+        border-top: 1px dotted rgb(1, 102, 1);
+      }
     }
 
 
+  }
+}
+
+
+
+
+// location page
+
+@media (min-width: 1000px) {
+  #location_container {
+    main {
+      padding: 3%;
+      justify-content: space-between;
+      section {
+        @include flexBox(row);
+
+        .google_map_sec {
+          width: 60%;
+          height: 40vh;
+        }
+
+        .detail_info_sec {
+          height: 40vh;
+          flex-direction: column;
+          div {
+            font-size: small;
+          }
+        }
+      }
+    }
   }
 }

@@ -33,3 +33,23 @@
   }
 }
 }
+
+
+
+// location page
+
+@media (min-width: 1500px) {
+  #location_container {
+    main {
+      padding: 0%;
+      section {
+        .detail_info_sec {
+          justify-content: space-evenly;
+          div {
+            font-size:large;
+          }
+        }
+      }
+    }
+  }
+}
