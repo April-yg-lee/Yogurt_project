@@ -31,7 +31,7 @@
 
   // FIRST SECTION 
   #home_container {
-    .first_sec {
+    .benefit_sec {
 
       div {
         display: flex;
@@ -61,7 +61,7 @@
   // SECOND SECTION 
   #home_container,
   #menu_container {
-    .second_sec {
+    .review_sec {
       text-align: center;
       color: #50A890;
       text-shadow: 1px 1px rgb(181, 240, 181);
@@ -124,12 +124,26 @@
 // menu page
 @media (min-width: 1000px) {
   #menu_container {
-    .first_sec {
+    .menu_sec {
       display: flex;
       justify-content: space-evenly;
 
       .yogurt_art {
         border-top: 1px dotted rgb(1, 102, 1);
+      }
+    }
+
+    
+    .order_sec {
+      @include flexBox(row,center);
+      .order_art {
+        width: 80%;
+        .order_div_1, .order_div_2, .order_div_3 {
+          transition: 0.5s ease-in-out;
+        }
+        .order_div_1:hover, .order_div_2:hover, .order_div_3:hover {
+          transform: scale(1.5);
+        }
       }
     }
 
@@ -152,7 +166,7 @@
 
         .google_map_sec {
           width: 60%;
-          height: 40vh;
+          height: 50vh;
         }
 
         .detail_info_sec {

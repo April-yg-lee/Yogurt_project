@@ -87,7 +87,7 @@
   // FIRST SECTION 
   #home_container {
     main {
-      .first_sec {
+      .benefit_sec {
         img {
           width: 100%;
           height: 100%;
@@ -146,7 +146,7 @@
   // SECOND SECTION 
   #home_container,
   #menu_container {
-    .second_sec {
+    .review_sec {
       text-align: center;
       color: #50A890;
       text-shadow: 1px 1px rgb(181, 240, 181);
@@ -298,7 +298,11 @@
       text-align: center;
     }
 
-    .first_sec {
+    .order_h1 {
+      padding-top: 10vh;
+    }
+
+    .menu_sec {
       padding: 5%;
 
       h3 {
@@ -317,34 +321,64 @@
       }
     }
 
-
-  }
-}
-
-
-
-
-// location page
-
-@media (min-width: 300px) {
-  #location_container {
-    main {
+    .order_sec {
       padding: 5%;
 
-      .google_map_sec {
-        width: 100%;
-        height: 40vh;
-        border: 1px dotted rgb(1, 102, 1);
-      }
-
-      .detail_info_sec {
+      .order_art {
         padding: 5%;
+        border: 1px dotted rgb(1, 102, 1);
 
-        div {
-          color: rgb(57, 56, 56);
-          padding-bottom: 3%;
+        .order_div_1 {
+          @include bgBox("/img/naver_logo.jpg", center, contain, no-repeat);
+          width: 100%;
+          height: 10vh;
+          margin-bottom: 5%;
         }
+
+        .order_div_2 {
+          @include bgBox("/img/idus_logo.png", center, contain, no-repeat);
+          width: 100%;
+          height: 8vh;
+          margin-bottom: 9%;
+        }
+        
+        .order_div_3 {
+          @include bgBox("/img/mangoplate_logo.png", center, contain, no-repeat);
+          width: 100%;
+          height: 8vh;
+          margin-bottom: 7%;
+        }
+
       }
     }
   }
 }
+
+
+
+
+
+  // location page
+
+  @media (min-width: 300px) {
+    #location_container {
+      main {
+        padding: 5%;
+
+        .google_map_sec {
+          width: 100%;
+          height: 40vh;
+          border: 1px dotted rgb(1, 102, 1);
+        }
+
+        .detail_info_sec {
+          padding: 5%;
+
+          div {
+            color: rgb(57, 56, 56);
+            padding-bottom: 3%;
+          }
+        }
+      }
+    }
+  }

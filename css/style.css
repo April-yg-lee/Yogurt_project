@@ -168,22 +168,22 @@ html {
     font-size: 3em;
     text-align: center;
   }
-  #home_container main .first_sec img {
+  #home_container main .benefit_sec img {
     width: 100%;
     height: 100%;
   }
-  #home_container main .first_sec h2 {
+  #home_container main .benefit_sec h2 {
     color: #50A890;
     text-shadow: 1px 1px #b5f0b5;
     text-align: center;
     padding: 15% 0%;
   }
-  #home_container main .first_sec article h3 {
+  #home_container main .benefit_sec article h3 {
     text-align: center;
     padding: 5% 0% 0% 0%;
     color: #007691;
   }
-  #home_container main .first_sec article ul {
+  #home_container main .benefit_sec article ul {
     padding: 5% 10%;
     color: #5F9191;
     text-align: center;
@@ -191,31 +191,31 @@ html {
     list-style-image: url(/img/check-mark1.png);
     width: 80%;
   }
-  #home_container main .first_sec article ul li {
+  #home_container main .benefit_sec article ul li {
     line-height: 1.5;
   }
-  #home_container main .first_sec article ul :nth-child(6) {
+  #home_container main .benefit_sec article ul :nth-child(6) {
     padding: 0% 0% 8% 0%;
   }
-  #home_container main .first_sec article ul a {
+  #home_container main .benefit_sec article ul a {
     text-decoration: none;
     background-color: #007691;
     color: white;
     padding: 2%;
     border-radius: 5px;
   }
-  #home_container .second_sec,
-  #menu_container .second_sec {
+  #home_container .review_sec,
+  #menu_container .review_sec {
     text-align: center;
     color: #50A890;
     text-shadow: 1px 1px #b5f0b5;
   }
-  #home_container .second_sec h2,
-  #menu_container .second_sec h2 {
+  #home_container .review_sec h2,
+  #menu_container .review_sec h2 {
     padding: 15% 0% 5% 0%;
   }
-  #home_container .second_sec a:hover img,
-  #menu_container .second_sec a:hover img {
+  #home_container .review_sec a:hover img,
+  #menu_container .review_sec a:hover img {
     opacity: 1;
     -webkit-animation: flash 1.5s;
     animation: flash 1.5s;
@@ -236,8 +236,8 @@ html {
       opacity: 1;
     }
   }
-  #home_container .second_sec img,
-  #menu_container .second_sec img {
+  #home_container .review_sec img,
+  #menu_container .review_sec img {
     width: 100%;
     height: 100%;
     opacity: 1;
@@ -344,20 +344,57 @@ html {
   #menu_container h1 {
     text-align: center;
   }
-  #menu_container .first_sec {
+  #menu_container .order_h1 {
+    padding-top: 10vh;
+  }
+  #menu_container .menu_sec {
     padding: 5%;
   }
-  #menu_container .first_sec h3 {
+  #menu_container .menu_sec h3 {
     color: #393838;
   }
-  #menu_container .first_sec .cheese_art {
+  #menu_container .menu_sec .cheese_art {
     padding: 5%;
     border: 1px dotted #016601;
   }
-  #menu_container .first_sec .yogurt_art {
+  #menu_container .menu_sec .yogurt_art {
     padding: 5%;
     border: 1px dotted #016601;
     border-top: 1px solid transparent;
+  }
+  #menu_container .order_sec {
+    padding: 5%;
+  }
+  #menu_container .order_sec .order_art {
+    padding: 5%;
+    border: 1px dotted #016601;
+  }
+  #menu_container .order_sec .order_art .order_div_1 {
+    background-image: url("/img/naver_logo.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 5%;
+  }
+  #menu_container .order_sec .order_art .order_div_2 {
+    background-image: url("/img/idus_logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 8vh;
+    margin-bottom: 9%;
+  }
+  #menu_container .order_sec .order_art .order_div_3 {
+    background-image: url("/img/mangoplate_logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 8vh;
+    margin-bottom: 7%;
   }
 }
 
@@ -406,22 +443,24 @@ html {
   #home_container header .header_title h1 {
     font-size: 4em;
   }
-  #home_container .first_sec h2 {
+  #home_container .benefit_sec h2 {
     font-size: 35px;
   }
-  #home_container .first_sec article h3 {
+  #home_container .benefit_sec article h3 {
     font-size: 30px;
   }
-  #home_container .first_sec article ul {
+  #home_container .benefit_sec article ul {
     font-size: 23px;
   }
-  #home_container .first_sec article ul a {
+  #home_container .benefit_sec article ul a {
     border-radius: 10px;
   }
-  #home_container .second_sec h2, #menu_container .second_sec h2 {
+  #home_container .review_sec h2,
+  #menu_container .review_sec h2 {
     font-size: 35px;
   }
-  #home_container .second_sec img, #menu_container .second_sec img {
+  #home_container .review_sec img,
+  #menu_container .review_sec img {
     width: 49%;
     height: 300px;
   }
@@ -453,13 +492,13 @@ html {
   #menu_container h1 {
     font-size: 50px;
   }
-  #menu_container .first_sec {
+  #menu_container .menu_sec {
     padding: 5%;
   }
-  #menu_container .first_sec h2 {
+  #menu_container .menu_sec h2 {
     font-size: 40px;
   }
-  #menu_container .first_sec h3 {
+  #menu_container .menu_sec h3 {
     font-size: 25px;
   }
 }
@@ -515,37 +554,37 @@ html {
     background-color: #dffb97;
     border-radius: 5px;
   }
-  #home_container .first_sec div {
+  #home_container .benefit_sec div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  #home_container .first_sec div img {
+  #home_container .benefit_sec div img {
     width: 49%;
     height: 100%;
   }
-  #home_container .first_sec div article {
+  #home_container .benefit_sec div article {
     width: 49%;
   }
-  #home_container .first_sec div article h3 {
+  #home_container .benefit_sec div article h3 {
     padding-top: 0;
     font-size: 25px;
   }
-  #home_container .first_sec div article ul {
+  #home_container .benefit_sec div article ul {
     font-size: 20px;
   }
-  #home_container .second_sec,
-  #menu_container .second_sec {
+  #home_container .review_sec,
+  #menu_container .review_sec {
     text-align: center;
     color: #50A890;
     text-shadow: 1px 1px #b5f0b5;
   }
-  #home_container .second_sec h2,
-  #menu_container .second_sec h2 {
+  #home_container .review_sec h2,
+  #menu_container .review_sec h2 {
     padding: 15% 0% 5% 0%;
   }
-  #home_container .second_sec img,
-  #menu_container .second_sec img {
+  #home_container .review_sec img,
+  #menu_container .review_sec img {
     width: 24%;
     height: 30vh;
   }
@@ -599,7 +638,7 @@ html {
 }
 
 @media (min-width: 1000px) {
-  #menu_container .first_sec {
+  #menu_container .menu_sec {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -607,8 +646,35 @@ html {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  #menu_container .first_sec .yogurt_art {
+  #menu_container .menu_sec .yogurt_art {
     border-top: 1px dotted #016601;
+  }
+  #menu_container .order_sec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 0px;
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  #menu_container .order_sec .order_art {
+    width: 80%;
+  }
+  #menu_container .order_sec .order_art .order_div_1, #menu_container .order_sec .order_art .order_div_2, #menu_container .order_sec .order_art .order_div_3 {
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  #menu_container .order_sec .order_art .order_div_1:hover, #menu_container .order_sec .order_art .order_div_2:hover, #menu_container .order_sec .order_art .order_div_3:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 
@@ -637,7 +703,7 @@ html {
   }
   #location_container main section .google_map_sec {
     width: 60%;
-    height: 40vh;
+    height: 50vh;
   }
   #location_container main section .detail_info_sec {
     height: 40vh;
@@ -652,7 +718,7 @@ html {
 }
 
 @media (min-width: 1500px) {
-  #home_container .second_sec img, #menu_container .second_sec img {
+  #home_container .review_sec img, #menu_container .review_sec img {
     width: 24%;
     height: 300px;
   }
@@ -674,6 +740,9 @@ html {
 @media (min-width: 1500px) {
   #location_container main {
     padding: 0%;
+  }
+  #location_container main section .google_map_sec {
+    height: 60vh;
   }
   #location_container main section .detail_info_sec {
     -webkit-box-pack: space-evenly;

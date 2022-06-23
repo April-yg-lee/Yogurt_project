@@ -8,7 +8,7 @@
   $bgSize : cover,
   $bgRepeat : no-repeat
 ){
-  background: url($bg);
+  background-image: url($bg);
   background-position: $bgPosition;
   background-size: $bgSize;
   background-repeat: $bgRepeat;
