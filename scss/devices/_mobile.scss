@@ -5,7 +5,8 @@
   #home_container,
   #ourStory_container,
   #menu_container,
-  #location_container {
+  #location_container,
+  #contact_container {
     nav {
       @include flexBox();
       padding: 5%;
@@ -196,7 +197,8 @@
   #home_container,
   #ourStory_container,
   #menu_container,
-  #location_container {
+  #location_container,
+  #contact_container {
     footer {
       color: #5F9191;
 
@@ -377,6 +379,53 @@
           div {
             color: rgb(57, 56, 56);
             padding-bottom: 3%;
+          }
+        }
+      }
+    }
+  }
+
+
+  // contact page
+  @media (min-width: 300px) {
+    #contact_container {
+      main {
+        padding: 10%;
+        text-align: center;
+
+        .contact_reason {
+          h2 {
+            font-size: 30px;
+          }
+          .contact_greeting {
+            font-size: 20px;
+            padding: 10%;
+          }
+          .contact_subject {
+            select {
+              width: 100%;
+              padding: 1%;
+            }
+            p {
+              text-align: left;
+            }
+          }
+        }
+        .contact_message {
+          input[type=text], input[type=email], textarea {
+            width: 100%;
+            padding: 2% 0%;
+          }
+          p {
+            padding-top: 5%;
+            text-align: left;
+          }
+          .robot {
+            padding: 5% 0%;
+            text-align: center;
+          }
+          input[type=submit] {
+            padding: 2%;
           }
         }
       }

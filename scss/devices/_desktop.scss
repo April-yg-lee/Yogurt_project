@@ -5,7 +5,8 @@
   #home_container,
   #ourStory_container,
   #menu_container,
-  #location_container {
+  #location_container,
+  #contact_container {
     nav {
       .hamburger_ul {
         display: none;
@@ -176,6 +177,25 @@
             font-size: small;
           }
         }
+      }
+    }
+  }
+}
+
+
+
+// contact page
+@media (min-width: 1000px) {
+  #contact_container {
+    main {
+      .contact_message {
+        .contact_msg_first_div {
+          display: flex;
+          justify-content: space-between;
+        }
+          input[type=text], input[type=email] {
+            width: 31vw;
+          }
       }
     }
   }

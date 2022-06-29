@@ -18,7 +18,8 @@ html {
   #home_container,
   #ourStory_container,
   #menu_container,
-  #location_container {
+  #location_container,
+  #contact_container {
     background-color: white;
   }
   #ourStory_container {
@@ -36,7 +37,8 @@ html {
   #home_container nav,
   #ourStory_container nav,
   #menu_container nav,
-  #location_container nav {
+  #location_container nav,
+  #contact_container nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -56,19 +58,22 @@ html {
   #home_container nav ul,
   #ourStory_container nav ul,
   #menu_container nav ul,
-  #location_container nav ul {
+  #location_container nav ul,
+  #contact_container nav ul {
     list-style: none;
   }
   #home_container nav .menu_ul,
   #ourStory_container nav .menu_ul,
   #menu_container nav .menu_ul,
-  #location_container nav .menu_ul {
+  #location_container nav .menu_ul,
+  #contact_container nav .menu_ul {
     display: none;
   }
   #home_container nav .logo_ul,
   #ourStory_container nav .logo_ul,
   #menu_container nav .logo_ul,
-  #location_container nav .logo_ul {
+  #location_container nav .logo_ul,
+  #contact_container nav .logo_ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -87,7 +92,8 @@ html {
   #home_container nav .logo_ul :first-child a,
   #ourStory_container nav .logo_ul :first-child a,
   #menu_container nav .logo_ul :first-child a,
-  #location_container nav .logo_ul :first-child a {
+  #location_container nav .logo_ul :first-child a,
+  #contact_container nav .logo_ul :first-child a {
     text-decoration: none;
     color: #02ad02;
     font-size: 2em;
@@ -96,14 +102,16 @@ html {
   #home_container nav .logo_ul img,
   #ourStory_container nav .logo_ul img,
   #menu_container nav .logo_ul img,
-  #location_container nav .logo_ul img {
+  #location_container nav .logo_ul img,
+  #contact_container nav .logo_ul img {
     width: 4em;
     height: 4em;
   }
   #home_container nav .hamburger_ul,
   #ourStory_container nav .hamburger_ul,
   #menu_container nav .hamburger_ul,
-  #location_container nav .hamburger_ul {
+  #location_container nav .hamburger_ul,
+  #contact_container nav .hamburger_ul {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -123,7 +131,8 @@ html {
   #home_container nav .hamburger_ul img,
   #ourStory_container nav .hamburger_ul img,
   #menu_container nav .hamburger_ul img,
-  #location_container nav .hamburger_ul img {
+  #location_container nav .hamburger_ul img,
+  #contact_container nav .hamburger_ul img {
     width: 3em;
     height: 3em;
   }
@@ -247,13 +256,15 @@ html {
   #home_container footer,
   #ourStory_container footer,
   #menu_container footer,
-  #location_container footer {
+  #location_container footer,
+  #contact_container footer {
     color: #5F9191;
   }
   #home_container footer div,
   #ourStory_container footer div,
   #menu_container footer div,
-  #location_container footer div {
+  #location_container footer div,
+  #contact_container footer div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -273,14 +284,16 @@ html {
   #home_container footer div a:hover img,
   #ourStory_container footer div a:hover img,
   #menu_container footer div a:hover img,
-  #location_container footer div a:hover img {
+  #location_container footer div a:hover img,
+  #contact_container footer div a:hover img {
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
   }
   #home_container footer div img,
   #ourStory_container footer div img,
   #menu_container footer div img,
-  #location_container footer div img {
+  #location_container footer div img,
+  #contact_container footer div img {
     width: 2em;
     height: 2em;
     -webkit-transform: scale(1);
@@ -291,14 +304,16 @@ html {
   #home_container footer hr,
   #ourStory_container footer hr,
   #menu_container footer hr,
-  #location_container footer hr {
+  #location_container footer hr,
+  #contact_container footer hr {
     text-align: center;
     border: 1px double #b0f5b0;
   }
   #home_container footer p,
   #ourStory_container footer p,
   #menu_container footer p,
-  #location_container footer p {
+  #location_container footer p,
+  #contact_container footer p {
     text-align: center;
     padding: 2%;
   }
@@ -416,24 +431,63 @@ html {
   }
 }
 
+@media (min-width: 300px) {
+  #contact_container main {
+    padding: 10%;
+    text-align: center;
+  }
+  #contact_container main .contact_reason h2 {
+    font-size: 30px;
+  }
+  #contact_container main .contact_reason .contact_greeting {
+    font-size: 20px;
+    padding: 10%;
+  }
+  #contact_container main .contact_reason .contact_subject select {
+    width: 100%;
+    padding: 1%;
+  }
+  #contact_container main .contact_reason .contact_subject p {
+    text-align: left;
+  }
+  #contact_container main .contact_message input[type=text], #contact_container main .contact_message input[type=email], #contact_container main .contact_message textarea {
+    width: 100%;
+    padding: 2% 0%;
+  }
+  #contact_container main .contact_message p {
+    padding-top: 5%;
+    text-align: left;
+  }
+  #contact_container main .contact_message .robot {
+    padding: 5% 0%;
+    text-align: center;
+  }
+  #contact_container main .contact_message input[type=submit] {
+    padding: 2%;
+  }
+}
+
 @media (min-width: 700px) {
   #home_container nav .logo_ul :first-child a,
   #ourStory_container nav .logo_ul :first-child a,
   #menu_container nav .logo_ul :first-child a,
-  #location_container nav .logo_ul :first-child a {
+  #location_container nav .logo_ul :first-child a,
+  #contact_container nav .logo_ul :first-child a {
     font-size: 2.5em;
   }
   #home_container nav .logo_ul img,
   #ourStory_container nav .logo_ul img,
   #menu_container nav .logo_ul img,
-  #location_container nav .logo_ul img {
+  #location_container nav .logo_ul img,
+  #contact_container nav .logo_ul img {
     width: 6em;
     height: 6em;
   }
   #home_container nav .hamburger_ul img,
   #ourStory_container nav .hamburger_ul img,
   #menu_container nav .hamburger_ul img,
-  #location_container nav .hamburger_ul img {
+  #location_container nav .hamburger_ul img,
+  #contact_container nav .hamburger_ul img {
     width: 3.5em;
     height: 3.5em;
   }
@@ -467,14 +521,16 @@ html {
   #home_container footer div img,
   #ourStory_container footer div img,
   #menu_container footer div img,
-  #location_container footer div img {
+  #location_container footer div img,
+  #contact_container footer div img {
     width: 35px;
     height: 35px;
   }
   #home_container footer p,
   #ourStory_container footer p,
   #menu_container footer p,
-  #location_container footer p {
+  #location_container footer p,
+  #contact_container footer p {
     font-size: 20px;
   }
 }
@@ -521,17 +577,31 @@ html {
   }
 }
 
+@media (min-width: 700px) {
+  #contact_container main .contact_reason h2 {
+    font-size: 30px;
+  }
+  #contact_container main .contact_reason .contact_greeting {
+    font-size: 20px;
+  }
+  #contact_container main .contact_reason .contact_message input[type=text], #contact_container main .contact_reason .contact_message input[type=email] {
+    width: 35vw;
+  }
+}
+
 @media (min-width: 1000px) {
   #home_container nav .hamburger_ul,
   #ourStory_container nav .hamburger_ul,
   #menu_container nav .hamburger_ul,
-  #location_container nav .hamburger_ul {
+  #location_container nav .hamburger_ul,
+  #contact_container nav .hamburger_ul {
     display: none;
   }
   #home_container nav .menu_ul,
   #ourStory_container nav .menu_ul,
   #menu_container nav .menu_ul,
-  #location_container nav .menu_ul {
+  #location_container nav .menu_ul,
+  #contact_container nav .menu_ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -543,14 +613,16 @@ html {
   #home_container nav .menu_ul a,
   #ourStory_container nav .menu_ul a,
   #menu_container nav .menu_ul a,
-  #location_container nav .menu_ul a {
+  #location_container nav .menu_ul a,
+  #contact_container nav .menu_ul a {
     text-decoration: none;
     color: #163029;
   }
   #home_container nav .menu_ul a:hover,
   #ourStory_container nav .menu_ul a:hover,
   #menu_container nav .menu_ul a:hover,
-  #location_container nav .menu_ul a:hover {
+  #location_container nav .menu_ul a:hover,
+  #contact_container nav .menu_ul a:hover {
     background-color: #dffb97;
     border-radius: 5px;
   }
@@ -717,6 +789,20 @@ html {
   }
 }
 
+@media (min-width: 1000px) {
+  #contact_container main .contact_message .contact_msg_first_div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #contact_container main .contact_message input[type=text], #contact_container main .contact_message input[type=email] {
+    width: 31vw;
+  }
+}
+
 @media (min-width: 1500px) {
   #home_container .review_sec img, #menu_container .review_sec img {
     width: 24%;
@@ -751,6 +837,15 @@ html {
   }
   #location_container main section .detail_info_sec div {
     font-size: large;
+  }
+}
+
+@media (min-width: 1500px) {
+  #contact_container main {
+    padding: 0% 20%;
+  }
+  #contact_container main .contact_message input[type=text], #contact_container main .contact_message input[type=email] {
+    width: 23vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

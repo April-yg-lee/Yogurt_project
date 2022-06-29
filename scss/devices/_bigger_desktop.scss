@@ -56,3 +56,19 @@
     }
   }
 }
+
+
+
+// contact page
+@media (min-width: 1500px) {
+  #contact_container {
+    main {
+      padding: 0% 20%;
+      .contact_message {
+          input[type=text], input[type=email] {
+            width: 23vw;
+          }
+      }
+    }
+  }
+}

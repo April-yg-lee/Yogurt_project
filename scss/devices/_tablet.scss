@@ -5,7 +5,8 @@
   #home_container,
   #ourStory_container,
   #menu_container,
-  #location_container {
+  #location_container,
+  #contact_container {
     nav {
       .logo_ul {
 
@@ -89,7 +90,8 @@
   #home_container,
   #ourStory_container,
   #menu_container,
-  #location_container {
+  #location_container,
+  #contact_container {
     footer {
       div {
         img {
@@ -155,3 +157,29 @@
     }
   }
 }
+
+
+
+
+// contact page
+@media (min-width: 700px) {
+    #contact_container {
+      main {
+        .contact_reason {
+        h2 {
+          font-size: 30px;
+        }
+        .contact_greeting {
+          font-size: 20px;
+        }
+        .contact_message {
+    
+            input[type=text], input[type=email] {
+              width: 35vw;
+            }
+          
+        }
+      }
+    }
+    }
+  }
