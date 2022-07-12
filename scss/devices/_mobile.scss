@@ -24,7 +24,7 @@
 
         :first-child a {
           text-decoration: none;
-          color: rgb(2, 173, 2);
+          color: $navLogoColor;
           font-size: 2em;
           font-weight: 800;
         }
@@ -67,8 +67,8 @@
       .header_title {
         z-index: 1;
         color: white;
-        text-shadow: 1px 1px rgb(118, 252, 178);
-        background-color: rgba(11, 36, 16, 0.1);
+        text-shadow: $homeHeaderShadowColor;
+        background-color: $homeHeaderBGColor;
         width: 100%;
         height: 100%;
         position: absolute;
@@ -95,8 +95,8 @@
         }
 
         h2 {
-          color: #50A890;
-          text-shadow: 1px 1px rgb(181, 240, 181);
+          color: $homeH2Color;
+          text-shadow: $homeH2ShadowColor;
           text-align: center;
           padding: 15% 0%;
         }
@@ -106,12 +106,12 @@
           h3 {
             text-align: center;
             padding: 5% 0% 0% 0%;
-            color: #007691;
+            color: $homeH3Color;
           }
 
           ul {
             padding: 5% 10%;
-            color: #5F9191;
+            color: $homeUlColor;
             text-align: center;
             list-style: none;
             list-style-image: url(/img/check-mark1.png);
@@ -129,7 +129,7 @@
 
             a {
               text-decoration: none;
-              background-color: #007691;
+              background-color: $homeH3Color;
               color: white;
               padding: 2%;
               border-radius: 5px;
@@ -149,8 +149,8 @@
   #menu_container {
     .review_sec {
       text-align: center;
-      color: #50A890;
-      text-shadow: 1px 1px rgb(181, 240, 181);
+      color: $homeH2Color;
+      text-shadow: $homeH2ShadowColor;
 
       h2 {
         padding: 15% 0% 5% 0%;
@@ -200,7 +200,7 @@
   #location_container,
   #contact_container {
     footer {
-      color: #5F9191;
+      color: $homeUlColor;
 
       div {
         @include flexBox(row, center, center, 0px, 10px);
@@ -223,7 +223,7 @@
 
       hr {
         text-align: center;
-        border: 1px double rgb(176, 245, 176);
+        border: $footerLineColor;
       }
 
       p {
@@ -257,16 +257,16 @@
     }
 
     h2 {
-      color: #007691;
+      color: $homeH3Color;
       font-size: 35px;
     }
 
     .skyblue {
-      color: #00ACC7;
+      color: $skyBlueColor;
     }
 
     .deepgreen {
-      color: #059c65;
+      color: $deepGreenColor;
       font-weight: 800;
     }
 
@@ -308,17 +308,17 @@
       padding: 5%;
 
       h3 {
-        color: rgb(57, 56, 56);
+        color: $menuH3Color;
       }
 
       .cheese_art {
         padding: 5%;
-        border: 1px dotted rgb(1, 102, 1);
+        border: $menuBorderColor;
       }
 
       .yogurt_art {
         padding: 5%;
-        border: 1px dotted rgb(1, 102, 1);
+        border: $menuBorderColor;
         border-top: 1px solid transparent;
       }
     }
@@ -328,7 +328,7 @@
 
       .order_art {
         padding: 5%;
-        border: 1px dotted rgb(1, 102, 1);
+        border: $menuBorderColor;
 
         .order_div_1 {
           @include bgBox("/img/naver_logo.jpg", center, contain, no-repeat);
@@ -370,14 +370,14 @@
         .google_map_sec {
           width: 100%;
           height: 40vh;
-          border: 1px dotted rgb(1, 102, 1);
+          border: $menuBorderColor;
         }
 
         .detail_info_sec {
           padding: 5%;
 
           div {
-            color: rgb(57, 56, 56);
+            color: $locationColor;
             padding-bottom: 3%;
           }
         }

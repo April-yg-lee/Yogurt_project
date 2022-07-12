@@ -94,7 +94,7 @@ html {
   #location_container nav .logo_ul :first-child a,
   #contact_container nav .logo_ul :first-child a {
     text-decoration: none;
-    color: #02ad02;
+    color: #46cb46;
     font-size: 2em;
     font-weight: 800;
   }
@@ -152,7 +152,7 @@ html {
   #home_container header .header_title {
     z-index: 1;
     color: white;
-    text-shadow: 1px 1px #76fcb2;
+    text-shadow: 3px 3px #60cd91;
     background-color: rgba(11, 36, 16, 0.1);
     width: 100%;
     height: 100%;
@@ -647,8 +647,6 @@ html {
   #home_container .review_sec,
   #menu_container .review_sec {
     text-align: center;
-    color: #50A890;
-    text-shadow: 1px 1px #b5f0b5;
   }
   #home_container .review_sec h2,
   #menu_container .review_sec h2 {

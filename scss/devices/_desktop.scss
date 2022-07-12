@@ -19,11 +19,11 @@
 
         a {
           text-decoration: none;
-          color: #163029;
+          color: $navMenuColor;
         }
 
         a:hover {
-          background-color: #dffb97;
+          background-color: $navHoverColor;
           border-radius: 5px;
         }
       }
@@ -64,8 +64,6 @@
   #menu_container {
     .review_sec {
       text-align: center;
-      color: #50A890;
-      text-shadow: 1px 1px rgb(181, 240, 181);
 
       h2 {
         padding: 15% 0% 5% 0%;
@@ -108,8 +106,6 @@
         div {
           @include flexBox(row, center, center);
 
-          article {}
-
           img {
             width: 50%;
           }
@@ -130,7 +126,7 @@
       justify-content: space-evenly;
 
       .yogurt_art {
-        border-top: 1px dotted rgb(1, 102, 1);
+        border-top: $menuBorderColor;
       }
     }
 
