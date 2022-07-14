@@ -19,7 +19,7 @@
 
         a {
           text-decoration: none;
-          color: $navMenuColor;
+          color: $darkGrayColor;
         }
 
         a:hover {
@@ -96,7 +96,7 @@
           @include flexBox(row, center, center);
 
           img {
-            width: 50%;
+            height: 50vh;
           }
 
         }
@@ -126,7 +126,9 @@
       justify-content: space-evenly;
 
       .yogurt_art {
-        border-top: $menuBorderColor;
+        border-top: $menuBorderColor
+        
+        ;
       }
     }
 

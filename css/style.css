@@ -152,7 +152,7 @@ html {
   #home_container header .header_title {
     z-index: 1;
     color: white;
-    text-shadow: 3px 3px #60cd91;
+    text-shadow: 1px 1px #b0afaf;
     background-color: rgba(11, 36, 16, 0.1);
     width: 100%;
     height: 100%;
@@ -171,10 +171,26 @@ html {
             column-gap: 0px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #home_container header .header_title h1 {
     font-size: 3em;
     text-align: center;
+  }
+  #home_container header .header_title a {
+    padding: 1.5%;
+    color: white;
+    text-shadow: none;
+    border: 1px solid white;
+    text-decoration: none;
+  }
+  #home_container header .header_title a:hover {
+    background-color: #50A890;
+    cursor: pointer;
   }
   #home_container main .benefit_sec img {
     width: 100%;
@@ -182,7 +198,6 @@ html {
   }
   #home_container main .benefit_sec h2 {
     color: #50A890;
-    text-shadow: 1px 1px #b5f0b5;
     text-align: center;
     padding: 15% 0%;
   }
@@ -193,7 +208,7 @@ html {
   }
   #home_container main .benefit_sec article ul {
     padding: 5% 10%;
-    color: #5F9191;
+    color: #393838;
     text-align: center;
     list-style: none;
     list-style-image: url(/img/check-mark1.png);
@@ -216,7 +231,6 @@ html {
   #menu_container .review_sec {
     text-align: center;
     color: #50A890;
-    text-shadow: 1px 1px #b5f0b5;
   }
   #home_container .review_sec h2,
   #menu_container .review_sec h2 {
@@ -257,7 +271,7 @@ html {
   #menu_container footer,
   #location_container footer,
   #contact_container footer {
-    color: #5F9191;
+    color: #393838;
   }
   #home_container footer div,
   #ourStory_container footer div,
@@ -306,7 +320,7 @@ html {
   #location_container footer hr,
   #contact_container footer hr {
     text-align: center;
-    border: 1px double #b0f5b0;
+    border: 1px double #dffb97;
   }
   #home_container footer p,
   #ourStory_container footer p,
@@ -322,7 +336,11 @@ html {
   #ourStory_container main section {
     padding-bottom: 20vh;
   }
-  #ourStory_container main section img {
+  #ourStory_container main section .history_img_1 {
+    width: 100%;
+    height: 50vh;
+  }
+  #ourStory_container main section .history_img_2, #ourStory_container main section .history_img_3 {
     width: 100%;
     height: 100%;
   }
@@ -337,7 +355,7 @@ html {
     color: #00ACC7;
   }
   #ourStory_container .deepgreen {
-    color: #059c65;
+    color: #00ACC7;
     font-weight: 800;
   }
   #ourStory_container .philosophy_sec {
@@ -535,11 +553,15 @@ html {
 }
 
 @media (min-width: 700px) {
-  #ourStory_container h2 {
-    font-size: 70px;
+  #ourStory_container main section .history_img_1 {
+    width: 100%;
+    height: 70vh;
   }
-  #ourStory_container p {
-    font-size: 25px;
+  #ourStory_container main section h2 {
+    font-size: 50px;
+  }
+  #ourStory_container main section p {
+    font-size: 20px;
   }
 }
 
@@ -583,7 +605,8 @@ html {
   #contact_container main .contact_reason .contact_greeting {
     font-size: 20px;
   }
-  #contact_container main .contact_reason .contact_message input[type=text], #contact_container main .contact_reason .contact_message input[type=email] {
+  #contact_container main .contact_reason .contact_message input[type=text],
+  #contact_container main .contact_reason .contact_message input[type=email] {
     width: 35vw;
   }
 }
@@ -615,7 +638,7 @@ html {
   #location_container nav .menu_ul a,
   #contact_container nav .menu_ul a {
     text-decoration: none;
-    color: #163029;
+    color: #393838;
   }
   #home_container nav .menu_ul a:hover,
   #ourStory_container nav .menu_ul a:hover,
@@ -683,7 +706,7 @@ html {
         flex-wrap: nowrap;
   }
   #ourStory_container main .history_sec div img {
-    width: 50%;
+    height: 50vh;
   }
   #ourStory_container main .philosophy_sec div {
     display: -webkit-box;

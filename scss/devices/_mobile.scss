@@ -74,10 +74,26 @@
         position: absolute;
 
         @include flexBox();
+        display: flex;
+        flex-direction: column;
+        
+        // @include flexBox(row, center, center, 0px, 10px);
+
 
         h1 {
           font-size: 3em;
           text-align: center;
+        }
+        a {
+          padding: 1.5%;
+          color: white;
+          text-shadow: none;
+          border: 1px solid white;
+          text-decoration: none;
+        }
+        a:hover {
+          background-color: $homeH2Color;
+          cursor: pointer;
         }
       }
     }
@@ -96,7 +112,6 @@
 
         h2 {
           color: $homeH2Color;
-          text-shadow: $homeH2ShadowColor;
           text-align: center;
           padding: 15% 0%;
         }
@@ -150,7 +165,6 @@
     .review_sec {
       text-align: center;
       color: $homeH2Color;
-      text-shadow: $homeH2ShadowColor;
 
       h2 {
         padding: 15% 0% 5% 0%;
@@ -200,7 +214,7 @@
   #location_container,
   #contact_container {
     footer {
-      color: $homeUlColor;
+      color: $darkGrayColor;
 
       div {
         @include flexBox(row, center, center, 0px, 10px);
@@ -243,7 +257,11 @@
   #ourStory_container {
     main {
       section {
-        img {
+        .history_img_1 {
+          width: 100%;
+          height: 50vh;
+        }
+        .history_img_2, .history_img_3 {
           width: 100%;
           height: 100%;
         }
@@ -266,7 +284,7 @@
     }
 
     .deepgreen {
-      color: $deepGreenColor;
+      color: $skyBlueColor;
       font-weight: 800;
     }
 
@@ -308,7 +326,7 @@
       padding: 5%;
 
       h3 {
-        color: $menuH3Color;
+        color: $darkGrayColor;
       }
 
       .cheese_art {
@@ -377,7 +395,7 @@
           padding: 5%;
 
           div {
-            color: $locationColor;
+            color: $darkGrayColor;
             padding-bottom: 3%;
           }
         }
