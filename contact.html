@@ -10,6 +10,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="/javaScript/loadHTML.js" defer></script>
   <script src="/javaScript/functions.js" defer></script>
+  <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 </head>
 
 <body>
@@ -22,10 +23,10 @@
       <section class="contact_reason">
         <h2>CONTACT US</h2>
         <p class="contact_greeting">
-          How can I help you?
+          How can I help you &#10068;
         </p>
         <div class="contact_subject">
-          <p>Subject*</p>
+          <p>Subject<span class="required_star">*</span></p>
           <select>
             <option>General Inquiry</option>
             <option>Product Related</option>
@@ -38,17 +39,17 @@
         <section class="contact_message">
           <div class="contact_msg_first_div">
             <div>
-              <p>Name*</p>
+              <p>Name<span class="required_star">*</span></p>
               <input type="text" required>
             </div>
             <div>
-              <p>Email*</p>
+              <p>Email<span class="required_star">*</span></p>
               <input type="email" placeholder="ex) madfor@yogurt.com" required>
             </div>
           </div>
-          <p>Message*</p>
+          <p>Message<span class="required_star">*</span></p>
           <textarea rows="5" required></textarea><br>
-          <p class="robot">I'm not a robot</p>
+          <!-- <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div> -->
           <input type="submit" value="Send Message">
         </section>
       </form>

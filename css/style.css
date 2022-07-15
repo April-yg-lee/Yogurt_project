@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -336,11 +339,7 @@ html {
   #ourStory_container main section {
     padding-bottom: 20vh;
   }
-  #ourStory_container main section .history_img_1 {
-    width: 100%;
-    height: 50vh;
-  }
-  #ourStory_container main section .history_img_2, #ourStory_container main section .history_img_3 {
+  #ourStory_container main section img {
     width: 100%;
     height: 100%;
   }
@@ -384,14 +383,15 @@ html {
   }
   #menu_container .menu_sec h3 {
     color: #393838;
+    font-weight: 100;
   }
   #menu_container .menu_sec .cheese_art {
     padding: 5%;
-    border: 1px dotted #016601;
+    border: 1px dotted #393838;
   }
   #menu_container .menu_sec .yogurt_art {
     padding: 5%;
-    border: 1px dotted #016601;
+    border: 1px dotted #393838;
     border-top: 1px solid transparent;
   }
   #menu_container .order_sec {
@@ -399,7 +399,7 @@ html {
   }
   #menu_container .order_sec .order_art {
     padding: 5%;
-    border: 1px dotted #016601;
+    border: 1px dotted #393838;
   }
   #menu_container .order_sec .order_art .order_div_1 {
     background-image: url("/img/naver_logo.jpg");
@@ -437,7 +437,7 @@ html {
   #location_container main .google_map_sec {
     width: 100%;
     height: 40vh;
-    border: 1px dotted #016601;
+    border: 1px dotted #393838;
   }
   #location_container main .detail_info_sec {
     padding: 5%;
@@ -453,12 +453,17 @@ html {
     padding: 10%;
     text-align: center;
   }
+  #contact_container main .required_star {
+    color: #46cb46;
+    font-weight: 600;
+  }
   #contact_container main .contact_reason h2 {
     font-size: 30px;
   }
   #contact_container main .contact_reason .contact_greeting {
     font-size: 20px;
     padding: 10%;
+    color: #393838;
   }
   #contact_container main .contact_reason .contact_subject select {
     width: 100%;
@@ -481,6 +486,15 @@ html {
   }
   #contact_container main .contact_message input[type=submit] {
     padding: 2%;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  #contact_container main .contact_message input[type=submit]:hover {
+    background-color: #50A890;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
   }
 }
 
@@ -553,10 +567,6 @@ html {
 }
 
 @media (min-width: 700px) {
-  #ourStory_container main section .history_img_1 {
-    width: 100%;
-    height: 70vh;
-  }
   #ourStory_container main section h2 {
     font-size: 50px;
   }
@@ -600,10 +610,10 @@ html {
 
 @media (min-width: 700px) {
   #contact_container main .contact_reason h2 {
-    font-size: 30px;
+    font-size: 50px;
   }
   #contact_container main .contact_reason .contact_greeting {
-    font-size: 20px;
+    font-size: 30px;
   }
   #contact_container main .contact_reason .contact_message input[type=text],
   #contact_container main .contact_reason .contact_message input[type=email] {
@@ -689,7 +699,7 @@ html {
   #ourStory_container main p {
     font-size: 20px;
   }
-  #ourStory_container main .history_sec div {
+  #ourStory_container main .history_sec div, #ourStory_container main .philosophy_sec div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -705,26 +715,7 @@ html {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
-  #ourStory_container main .history_sec div img {
-    height: 50vh;
-  }
-  #ourStory_container main .philosophy_sec div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    row-gap: 0px;
-    -webkit-column-gap: 0px;
-            column-gap: 0px;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  #ourStory_container main .philosophy_sec div img {
+  #ourStory_container main .history_sec div img, #ourStory_container main .philosophy_sec div img {
     width: 50%;
   }
 }
@@ -739,7 +730,7 @@ html {
             justify-content: space-evenly;
   }
   #menu_container .menu_sec .yogurt_art {
-    border-top: 1px dotted #016601;
+    border-top: 1px dotted #393838;
   }
   #menu_container .order_sec {
     display: -webkit-box;

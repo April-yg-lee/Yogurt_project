@@ -91,29 +91,17 @@
         font-size: 20px;
       }
 
-      .history_sec {
-        div {
-          @include flexBox(row, center, center);
-
-          img {
-            height: 50vh;
-          }
-
-        }
-      }
-
-      .philosophy_sec {
+      .history_sec, .philosophy_sec {
         div {
           @include flexBox(row, center, center);
 
           img {
             width: 50%;
           }
+
         }
       }
-
     }
-
   }
 }
 
