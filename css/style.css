@@ -6,7 +6,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html {
@@ -190,6 +190,17 @@ html {
     text-shadow: none;
     border: 1px solid white;
     text-decoration: none;
+    margin-top: 3%;
+    -webkit-animation: glow 0.7s ease-in-out infinite alternate;
+            animation: glow 0.7s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #007691 0 0 20px #007691, 0 0 25px #007691, 0 0 30px #007691, 0 0 35px #007691;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 15px #50A890, 0 0 20px #50A890, 0 0 25px #50A890, 0 0 30px #50A890, 0 0 35px #50A890, 0 0 40px #50A890;
+    }
   }
   #home_container header .header_title a:hover {
     background-color: #50A890;
@@ -201,6 +212,7 @@ html {
   }
   #home_container main .benefit_sec h2 {
     color: #50A890;
+    font-family: "Lato", sans-serif;
     text-align: center;
     padding: 15% 0%;
   }
@@ -238,6 +250,7 @@ html {
   #home_container .review_sec h2,
   #menu_container .review_sec h2 {
     padding: 15% 0% 5% 0%;
+    font-family: "Lato", sans-serif;
   }
   #home_container .review_sec a:hover img,
   #menu_container .review_sec a:hover img {
@@ -349,6 +362,7 @@ html {
   #ourStory_container h2 {
     color: #007691;
     font-size: 35px;
+    font-family: "Lato", sans-serif;
   }
   #ourStory_container .skyblue {
     color: #00ACC7;
@@ -374,6 +388,7 @@ html {
 @media (min-width: 300px) {
   #menu_container h1 {
     text-align: center;
+    font-family: "Lato", sans-serif;
   }
   #menu_container .order_h1 {
     padding-top: 10vh;
@@ -446,6 +461,9 @@ html {
     color: #393838;
     padding-bottom: 3%;
   }
+  #location_container main .detail_info_sec div h2 {
+    font-family: "Lato", sans-serif;
+  }
 }
 
 @media (min-width: 300px) {
@@ -459,6 +477,7 @@ html {
   }
   #contact_container main .contact_reason h2 {
     font-size: 30px;
+    font-family: "Lato", sans-serif;
   }
   #contact_container main .contact_reason .contact_greeting {
     font-size: 20px;
@@ -472,7 +491,9 @@ html {
   #contact_container main .contact_reason .contact_subject p {
     text-align: left;
   }
-  #contact_container main .contact_message input[type=text], #contact_container main .contact_message input[type=email], #contact_container main .contact_message textarea {
+  #contact_container main .contact_message input[type=text],
+  #contact_container main .contact_message input[type=email],
+  #contact_container main .contact_message textarea {
     width: 100%;
     padding: 2% 0%;
   }
@@ -527,6 +548,9 @@ html {
   }
   #home_container header .header_title h1 {
     font-size: 4em;
+  }
+  #home_container header .header_title a {
+    font-size: 2em;
   }
   #home_container .benefit_sec h2 {
     font-size: 35px;
