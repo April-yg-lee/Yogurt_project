@@ -252,6 +252,18 @@
           }
         }
 
+        .up_arrow {
+          padding: 0% 0% 5% 0%;
+          img {
+            width: 3em;
+            height: 3em;
+          }
+          img:hover {
+            cursor: pointer;
+            transform: translateY(-10px);
+          }
+        }
+
         hr {
           text-align: center;
           border: $footerLineColor;
@@ -400,6 +412,8 @@
     #location_container {
       main {
         padding: 5%;
+        border: $menuBorderColor;
+
 
         .google_map_sec {
           width: 100%;
@@ -467,8 +481,16 @@
           input[type=email],
           textarea {
             width: 100%;
-            padding: 2% 0%;
+            padding: 2% 0%; 
+            transition: 0.3s ease-in-out;
           }
+
+          input[type=text]:focus,
+          input[type=email]:focus,
+          textarea:focus {
+            background-color: $navHoverColor;
+          }
+
 
           p {
             padding-top: 5%;
@@ -481,6 +503,7 @@
           }
 
           input[type=submit] {
+            margin-top: 3%;
             padding: 2%;
             background-color: white;
             color: black;

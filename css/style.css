@@ -330,6 +330,30 @@ html {
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
   }
+  #home_container footer .up_arrow,
+  #ourStory_container footer .up_arrow,
+  #menu_container footer .up_arrow,
+  #location_container footer .up_arrow,
+  #contact_container footer .up_arrow {
+    padding: 0% 0% 5% 0%;
+  }
+  #home_container footer .up_arrow img,
+  #ourStory_container footer .up_arrow img,
+  #menu_container footer .up_arrow img,
+  #location_container footer .up_arrow img,
+  #contact_container footer .up_arrow img {
+    width: 3em;
+    height: 3em;
+  }
+  #home_container footer .up_arrow img:hover,
+  #ourStory_container footer .up_arrow img:hover,
+  #menu_container footer .up_arrow img:hover,
+  #location_container footer .up_arrow img:hover,
+  #contact_container footer .up_arrow img:hover {
+    cursor: pointer;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
   #home_container footer hr,
   #ourStory_container footer hr,
   #menu_container footer hr,
@@ -448,6 +472,7 @@ html {
 @media (min-width: 300px) {
   #location_container main {
     padding: 5%;
+    border: 1px dotted #393838;
   }
   #location_container main .google_map_sec {
     width: 100%;
@@ -496,6 +521,13 @@ html {
   #contact_container main .contact_message textarea {
     width: 100%;
     padding: 2% 0%;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  #contact_container main .contact_message input[type=text]:focus,
+  #contact_container main .contact_message input[type=email]:focus,
+  #contact_container main .contact_message textarea:focus {
+    background-color: #dffb97;
   }
   #contact_container main .contact_message p {
     padding-top: 5%;
@@ -506,6 +538,7 @@ html {
     text-align: center;
   }
   #contact_container main .contact_message input[type=submit] {
+    margin-top: 3%;
     padding: 2%;
     background-color: white;
     color: black;
@@ -860,7 +893,7 @@ html {
 
 @media (min-width: 1500px) {
   #location_container main {
-    padding: 0%;
+    padding: 3%;
   }
   #location_container main section .google_map_sec {
     height: 60vh;
