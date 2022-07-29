@@ -49,47 +49,191 @@
   }
 
   // HEADER 
+  // #home_container {
+  //   header {
+  //     width: 100%;
+  //     height: 40vh;
+  //     position: relative;
+
+  //     img {
+  //       width: 100%;
+  //       height: 100%;
+  //       position: absolute;
+  //       object-fit: cover;
+  //       z-index: 0;
+  //       opacity: 0.5;
+  //     }
+
+  //     .header_title {
+  //       z-index: 1;
+  //       color: white;
+  //       text-shadow: $homeHeaderShadowColor;
+  //       background-color: $homeHeaderBGColor;
+  //       width: 100%;
+  //       height: 100%;
+  //       position: absolute;
+
+  //       @include flexBox();
+  //       display: flex;
+  //       flex-direction: column;
+
+  //       // @include flexBox(row, center, center, 0px, 10px);
+
+
+  //       h1 {
+  //         font-size: 3em;
+  //         text-align: center;
+  //       }
+
+  //       a {
+  //         padding: 1.5%;
+  //         color: white;
+  //         text-shadow: none;
+  //         border: 1px solid white;
+  //         text-decoration: none;
+  //         margin-top: 3%;
+  //         animation: glow 0.7s ease-in-out infinite alternate;
+  //       }
+
+  //       @-webkit-keyframes glow {
+  //         from {
+  //           text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px $homeH3Color 0 0 20px $homeH3Color, 0 0 25px $homeH3Color, 0 0 30px $homeH3Color, 0 0 35px $homeH3Color;
+  //         }
+
+  //         to {
+  //           text-shadow: 0 0 10px #fff, 0 0 15px $homeH2Color, 0 0 20px $homeH2Color, 0 0 25px $homeH2Color, 0 0 30px $homeH2Color, 0 0 35px $homeH2Color, 0 0 40px $homeH2Color;
+  //         }
+  //       }
+
+  //         a:hover {
+  //           background-color: $homeH2Color;
+  //           cursor: pointer;
+  //         }
+
+  //     }
+  //   }
+  // }
+
   #home_container {
     header {
-      width: 100%;
-      height: 40vh;
-      position: relative;
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+        background-color: $homeHeaderBGColor;
+      }
 
       img {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        object-fit: cover;
-        z-index: 0;
         opacity: 0.5;
       }
 
-      .header_title {
-        z-index: 1;
-        color: white;
-        text-shadow: $homeHeaderShadowColor;
-        background-color: $homeHeaderBGColor;
-        width: 100%;
-        height: 100%;
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
         position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        display: none;
+      }
 
-        @include flexBox();
-        display: flex;
-        flex-direction: column;
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
 
-        // @include flexBox(row, center, center, 0px, 10px);
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
 
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 40px;
+        font-weight: 700;
+        position: absolute;
+        bottom: 30%;
+        width: 100%;
+        text-align: center;
+        text-shadow: $homeHeaderShadowColor;
+      }
 
-        h1 {
-          font-size: 3em;
-          text-align: center;
+   
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active,
+      .dot:hover {
+        background-color: #717171;
+      }
+
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: .4
         }
 
+        to {
+          opacity: 1
+        }
+      }
+    }
+  }
+
+
+
+  // FIRST SECTION 
+  #home_container {
+    main {
+      .benefit_sec {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        h2 {
+          color: $homeH2Color;
+          font-family: $eachPageStrongFont;
+          text-align: center;
+          padding: 15% 0%; 
+
         a {
-          padding: 1.5%;
+          padding: 2%;
           color: white;
           text-shadow: none;
-          border: 1px solid white;
           text-decoration: none;
           margin-top: 3%;
           animation: glow 0.7s ease-in-out infinite alternate;
@@ -106,418 +250,398 @@
         }
 
           a:hover {
-            background-color: $homeH2Color;
             cursor: pointer;
           }
-        
-      }
+          }
+        }
+      
+
+        article {
+
+          h3 {
+            text-align: center;
+            padding: 5% 0% 0% 0%;
+            color: $homeH3Color;
+          }
+
+          ul {
+            padding: 5% 10%;
+            color: $homeUlColor;
+            text-align: center;
+            list-style: none;
+            list-style-image: url(/img/check-mark1.png);
+            width: 80%;
+
+            li {
+              line-height: 1.5;
+            }
+
+            :nth-child(6) {
+              padding: 0% 0% 8% 0%;
+            }
+
+            a {
+              text-decoration: none;
+              background-color: $homeH3Color;
+              color: white;
+              padding: 2%;
+              border-radius: 5px;
+            }
+          }
+
+        }
+      
     }
   }
 
 
 
-    // FIRST SECTION 
-    #home_container {
-      main {
-        .benefit_sec {
-          img {
-            width: 100%;
-            height: 100%;
+
+  // SECOND SECTION 
+  #home_container,
+  #menu_container {
+    .review_sec {
+      text-align: center;
+      color: $homeH2Color;
+
+      h2 {
+        padding: 15% 0% 5% 0%;
+        font-family: $eachPageStrongFont;
+      }
+
+      a:hover img {
+        opacity: 1;
+        -webkit-animation: flash 1.5s;
+        animation: flash 1.5s;
+
+        @-webkit-keyframes flash {
+          0% {
+            opacity: .4;
           }
 
-          h2 {
-            color: $homeH2Color;
-            font-family: $eachPageStrongFont;
-            text-align: center;
-            padding: 15% 0%;
+          100% {
+            opacity: 1;
+          }
+        }
+
+        @keyframes flash {
+          0% {
+            opacity: .4;
           }
 
-          article {
-
-            h3 {
-              text-align: center;
-              padding: 5% 0% 0% 0%;
-              color: $homeH3Color;
-            }
-
-            ul {
-              padding: 5% 10%;
-              color: $homeUlColor;
-              text-align: center;
-              list-style: none;
-              list-style-image: url(/img/check-mark1.png);
-              width: 80%;
-
-              li {
-                line-height: 1.5;
-              }
-
-              :nth-child(6) {
-                padding: 0% 0% 8% 0%;
-              }
-
-
-
-              a {
-                text-decoration: none;
-                background-color: $homeH3Color;
-                color: white;
-                padding: 2%;
-                border-radius: 5px;
-              }
-            }
-
+          100% {
+            opacity: 1;
           }
         }
       }
+
+      img {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+      }
     }
+  }
 
 
+  // FOOTER 
+  #home_container,
+  #ourStory_container,
+  #menu_container,
+  #location_container,
+  #contact_container {
+    footer {
+      color: $darkGrayColor;
 
-
-    // SECOND SECTION 
-    #home_container,
-    #menu_container {
-      .review_sec {
-        text-align: center;
-        color: $homeH2Color;
-
-        h2 {
-          padding: 15% 0% 5% 0%;
-          font-family: $eachPageStrongFont;
-        }
+      div {
+        @include flexBox(row, center, center, 0px, 10px);
+        padding: 10% 0%;
 
         a:hover img {
-          opacity: 1;
-          -webkit-animation: flash 1.5s;
-          animation: flash 1.5s;
-
-          @-webkit-keyframes flash {
-            0% {
-              opacity: .4;
-            }
-
-            100% {
-              opacity: 1;
-            }
-          }
-
-          @keyframes flash {
-            0% {
-              opacity: .4;
-            }
-
-            100% {
-              opacity: 1;
-            }
-          }
+          -webkit-transform: scale(1.3);
+          transform: scale(1.3);
         }
 
         img {
+          width: 2em;
+          height: 2em;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          -webkit-transition: .3s ease-in-out;
+          transition: .3s ease-in-out;
+        }
+      }
+
+      .up_arrow {
+        padding: 0% 0% 5% 0%;
+
+        img {
+          width: 3em;
+          height: 3em;
+        }
+
+        img:hover {
+          cursor: pointer;
+          transform: translateY(-10px);
+        }
+      }
+
+      hr {
+        text-align: center;
+        border: $footerLineColor;
+      }
+
+      p {
+        text-align: center;
+        padding: 2%;
+
+      }
+
+    }
+  }
+}
+
+
+
+// ourStory page 
+@media (min-width: 300px) {
+  #ourStory_container {
+    main {
+      section {
+        img {
           width: 100%;
           height: 100%;
-          opacity: 1;
-          -webkit-transition: 0.3s ease-in-out;
-          transition: 0.3s ease-in-out;
-        }
-      }
-    }
-
-
-    // FOOTER 
-    #home_container,
-    #ourStory_container,
-    #menu_container,
-    #location_container,
-    #contact_container {
-      footer {
-        color: $darkGrayColor;
-
-        div {
-          @include flexBox(row, center, center, 0px, 10px);
-          padding: 10% 0%;
-
-          a:hover img {
-            -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-          }
-
-          img {
-            width: 2em;
-            height: 2em;
-            -webkit-transform: scale(1);
-            transform: scale(1);
-            -webkit-transition: .3s ease-in-out;
-            transition: .3s ease-in-out;
-          }
         }
 
-        .up_arrow {
-          padding: 0% 0% 5% 0%;
-          img {
-            width: 3em;
-            height: 3em;
-          }
-          img:hover {
-            cursor: pointer;
-            transform: translateY(-10px);
-          }
-        }
-
-        hr {
-          text-align: center;
-          border: $footerLineColor;
-        }
-
-        p {
-          text-align: center;
-          padding: 2%;
-
-        }
-
-      }
-    }
-  }
-
-
-
-  // ourStory page 
-  @media (min-width: 300px) {
-    #ourStory_container {
-      main {
-        section {
-          img {
-            width: 100%;
-            height: 100%;
-          }
-
-          padding-bottom: 20vh;
-
-          article {
-            padding: 3%;
-          }
-        }
-      }
-
-      h2 {
-        color: $homeH3Color;
-        font-size: 35px;
-        font-family: $eachPageStrongFont;
-      }
-
-      .skyblue {
-        color: $skyBlueColor;
-      }
-
-      .deepgreen {
-        color: $skyBlueColor;
-        font-weight: 800;
-      }
-
-
-      .philosophy_sec {
         padding-bottom: 20vh;
-      }
 
-      .whyodoc_sec {
-        h2 {
+        article {
           padding: 3%;
         }
-
-        p {
-          padding-bottom: 2%;
-        }
-
-        padding: 0;
       }
     }
-  }
+
+    h2 {
+      color: $homeH3Color;
+      font-size: 35px;
+      font-family: $eachPageStrongFont;
+    }
+
+    .skyblue {
+      color: $skyBlueColor;
+    }
+
+    .deepgreen {
+      color: $skyBlueColor;
+      font-weight: 800;
+    }
 
 
+    .philosophy_sec {
+      padding-bottom: 20vh;
+    }
 
-
-  // menu page
-
-  @media (min-width: 300px) {
-    #menu_container {
-      h1 {
-        text-align: center;
-        font-family: $eachPageStrongFont;
+    .whyodoc_sec {
+      h2 {
+        padding: 3%;
       }
 
-      .order_h1 {
-        padding-top: 10vh;
+      p {
+        padding-bottom: 2%;
       }
 
-      .menu_sec {
-        padding: 5%;
-
-        h3 {
-          color: $darkGrayColor;
-          font-weight: 100;
-        }
-
-        .cheese_art {
-          padding: 5%;
-          border: $menuBorderColor;
-        }
-
-        .yogurt_art {
-          padding: 5%;
-          border: $menuBorderColor;
-          border-top: 1px solid transparent;
-        }
-      }
-
-      .order_sec {
-        padding: 5%;
-
-        .order_art {
-          padding: 5%;
-          border: $menuBorderColor;
-
-          .order_div_1 {
-            @include bgBox("/img/naver_logo.jpg", center, contain, no-repeat);
-            width: 100%;
-            height: 10vh;
-            margin-bottom: 5%;
-          }
-
-          .order_div_2 {
-            @include bgBox("/img/idus_logo.png", center, contain, no-repeat);
-            width: 100%;
-            height: 8vh;
-            margin-bottom: 9%;
-          }
-
-          .order_div_3 {
-            @include bgBox("/img/mangoplate_logo.png", center, contain, no-repeat);
-            width: 100%;
-            height: 8vh;
-            margin-bottom: 7%;
-          }
-
-        }
-      }
+      padding: 0;
     }
   }
+}
 
 
 
 
+// menu page
 
-  // location page
+@media (min-width: 300px) {
+  #menu_container {
+    h1 {
+      text-align: center;
+      font-family: $eachPageStrongFont;
+    }
 
-  @media (min-width: 300px) {
-    #location_container {
-      main {
+    .order_h1 {
+      padding-top: 10vh;
+    }
+
+    .menu_sec {
+      padding: 5%;
+
+      h3 {
+        color: $darkGrayColor;
+        font-weight: 100;
+      }
+
+      .cheese_art {
+        padding: 5%;
+        border: $menuBorderColor;
+      }
+
+      .yogurt_art {
+        padding: 5%;
+        border: $menuBorderColor;
+        border-top: 1px solid transparent;
+      }
+    }
+
+    .order_sec {
+      padding: 5%;
+
+      .order_art {
         padding: 5%;
         border: $menuBorderColor;
 
-
-        .google_map_sec {
+        .order_div_1 {
+          @include bgBox("/img/naver_logo.jpg", center, contain, no-repeat);
           width: 100%;
-          height: 40vh;
-          border: $menuBorderColor;
+          height: 10vh;
+          margin-bottom: 5%;
         }
 
-        .detail_info_sec {
-          padding: 5%;
-
-
-          div {
-            color: $darkGrayColor;
-            padding-bottom: 3%;
-
-            h2 {
-              font-family: $eachPageStrongFont;
-            }
-          }
+        .order_div_2 {
+          @include bgBox("/img/idus_logo.png", center, contain, no-repeat);
+          width: 100%;
+          height: 8vh;
+          margin-bottom: 9%;
         }
+
+        .order_div_3 {
+          @include bgBox("/img/mangoplate_logo.png", center, contain, no-repeat);
+          width: 100%;
+          height: 8vh;
+          margin-bottom: 7%;
+        }
+
       }
     }
   }
+}
 
 
-  // contact page
-  @media (min-width: 300px) {
-    #contact_container {
-      main {
-        .required_star {
-          color: $navLogoColor;
-          font-weight: 600;
-        }
 
-        padding: 10%;
-        text-align: center;
 
-        .contact_reason {
+
+// location page
+
+@media (min-width: 300px) {
+  #location_container {
+    main {
+      padding: 5%;
+      border: $menuBorderColor;
+
+
+      .google_map_sec {
+        width: 100%;
+        height: 40vh;
+        border: $menuBorderColor;
+      }
+
+      .detail_info_sec {
+        padding: 5%;
+
+
+        div {
+          color: $darkGrayColor;
+          padding-bottom: 3%;
+
           h2 {
-            font-size: 30px;
             font-family: $eachPageStrongFont;
           }
-
-          .contact_greeting {
-            font-size: 20px;
-            padding: 10%;
-            color: $darkGrayColor;
-          }
-
-          .contact_subject {
-            select {
-              width: 100%;
-              padding: 1%;
-            }
-
-            p {
-              text-align: left;
-            }
-          }
-        }
-
-        .contact_message {
-
-          input[type=text],
-          input[type=email],
-          textarea {
-            width: 100%;
-            padding: 2% 0%; 
-            transition: 0.3s ease-in-out;
-          }
-
-          input[type=text]:focus,
-          input[type=email]:focus,
-          textarea:focus {
-            background-color: $navHoverColor;
-          }
-
-
-          p {
-            padding-top: 5%;
-            text-align: left;
-          }
-
-          .robot {
-            padding: 5% 0%;
-            text-align: center;
-          }
-
-          input[type=submit] {
-            margin-top: 3%;
-            padding: 2%;
-            background-color: white;
-            color: black;
-            border: 1px solid black;
-          }
-
-          input[type=submit]:hover {
-            background-color: $homeH2Color;
-            color: white;
-            border: 1px solid white;
-            cursor: pointer;
-          }
-
         }
       }
     }
   }
+}
+
+
+// contact page
+@media (min-width: 300px) {
+  #contact_container {
+    main {
+      .required_star {
+        color: $navLogoColor;
+        font-weight: 600;
+      }
+
+      padding: 10%;
+      text-align: center;
+
+      .contact_reason {
+        h2 {
+          font-size: 30px;
+          font-family: $eachPageStrongFont;
+        }
+
+        .contact_greeting {
+          font-size: 20px;
+          padding: 10%;
+          color: $darkGrayColor;
+        }
+
+        .contact_subject {
+          select {
+            width: 100%;
+            padding: 1%;
+          }
+
+          p {
+            text-align: left;
+          }
+        }
+      }
+
+      .contact_message {
+
+        input[type=text],
+        input[type=email],
+        textarea {
+          width: 100%;
+          padding: 2% 0%;
+          transition: 0.3s ease-in-out;
+        }
+
+        input[type=text]:focus,
+        input[type=email]:focus,
+        textarea:focus {
+          background-color: $navHoverColor;
+        }
+
+
+        p {
+          padding-top: 5%;
+          text-align: left;
+        }
+
+        .robot {
+          padding: 5% 0%;
+          text-align: center;
+        }
+
+        input[type=submit] {
+          margin-top: 3%;
+          padding: 2%;
+          background-color: white;
+          color: black;
+          border: 1px solid black;
+        }
+
+        input[type=submit]:hover {
+          background-color: $homeH2Color;
+          color: white;
+          border: 1px solid white;
+          cursor: pointer;
+        }
+
+      }
+    }
+  }
+}

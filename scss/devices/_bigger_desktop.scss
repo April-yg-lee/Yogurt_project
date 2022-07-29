@@ -10,6 +10,26 @@
     }
   }
 }
+
+ // HEADER 
+ #home_container {
+  header {
+
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      display: inline-block;
+    }
+
+    /* Caption text */
+    .text {
+      font-size: 75px;
+      bottom: 35%;
+      width: 95%;
+    }
+  }
+}
 }
 
 // ourStory page

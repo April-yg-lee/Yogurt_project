@@ -1,33 +1,46 @@
-// let slides = document.getElementsByClassName('mySlides');
-//   // console.log(slides); 
-//   let activeIndex = 0; // setting the initial value
+let slideIndex = 1;
+showSlides(slideIndex);
 
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-//   function showSlide(slideCounter) {
-//     activeIndex += slideCounter; // increase or decrease the number of the picture 
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-//     if (activeIndex >= slides.length) { // after the picture#3, they jump to the 4th pic which is not existing. That's why it's necessary.
-//       activeIndex = 0; // jump back to the 1st picture
-//     } else if (activeIndex < 0) {
-//       activeIndex = slides.length - 1; // jump to the last picture 
-//     }
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 
-//     for (let i = 0; i < slides.length; i++) { // will hide all slides
-//       slides[i].style.display = 'none';
-//     }
-//     slides[activeIndex].style.display = 'block';  // only show the active slide 
+// let slideIndex = 0;
+// showSlides();
+
+// function showSlides() {
+//   let i;
+//   let slides = document.getElementsByClassName("mySlides");
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
 //   }
-
-//   showSlide(activeIndex);
-//   // 가장 처음에 켰을때 화면을 위해 처음에만 실행되기 위함.
-
-// const upArrow = document.querySelector('.up_arrow');
-
-// upArrow.addEventListener('click', ()=> {
-//   window.onload=function() {
-//     window.scrollTo(0,0);
-//   }
-// })
+//   slideIndex++;
+//   if (slideIndex > slides.length) {slideIndex = 1}
+//   slides[slideIndex-1].style.display = "block";
+//   setTimeout(showSlides, 2000); // Change image every 2 seconds
+// }
 
 window.onload=function(){
   const upArrow = document.querySelector('.up_arrow');

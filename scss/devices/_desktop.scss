@@ -10,12 +10,14 @@
     nav {
       .hamburger_ul {
         display: none;
+      
       }
 
       .menu_ul {
         display: flex;
         justify-content: space-evenly;
         width: 100%;
+        
 
         a {
           text-decoration: none;
@@ -26,6 +28,29 @@
           background-color: $navHoverColor;
           border-radius: 5px;
         }
+      }
+    }
+  }
+
+  // HEADER 
+  #home_container {
+    header {
+
+      img {
+        width: 100%;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        display: inline-block;
+      }
+
+      /* Caption text */
+      .text {
+        font-size: 70px;
+        bottom: 35%;
+        width: 95%;
       }
     }
   }

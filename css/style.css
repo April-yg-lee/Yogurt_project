@@ -139,56 +139,116 @@ html {
     height: 3em;
   }
   #home_container header {
-    width: 100%;
-    height: 40vh;
+    /* Slideshow container */
+    /* Hide the images by default */
+    /* Next & previous buttons */
+    /* Position the "next button" to the right */
+    /* On hover, add a black background color with a little bit see-through */
+    /* Caption text */
+    /* The dots/bullets/indicators */
+    /* Fading animation */
+  }
+  #home_container header .slideshow-container {
+    max-width: 1000px;
     position: relative;
+    margin: auto;
+  }
+  #home_container header .mySlides {
+    display: none;
+    background-color: rgba(7, 22, 10, 0.1);
   }
   #home_container header img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    -o-object-fit: cover;
-       object-fit: cover;
-    z-index: 0;
     opacity: 0.5;
   }
-  #home_container header .header_title {
-    z-index: 1;
+  #home_container header .prev,
+  #home_container header .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
     color: white;
-    text-shadow: 1px 1px #b0afaf;
-    background-color: rgba(11, 36, 16, 0.1);
+    font-weight: bold;
+    font-size: 18px;
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    display: none;
+  }
+  #home_container header .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  #home_container header .prev:hover,
+  #home_container header .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  #home_container header .text {
+    color: #f2f2f2;
+    font-size: 40px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px #656464;
+  }
+  #home_container header .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: background-color 0.6s ease;
+    transition: background-color 0.6s ease;
+  }
+  #home_container header .active,
+  #home_container header .dot:hover {
+    background-color: #717171;
+  }
+  #home_container header .fade {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #home_container main .benefit_sec img {
     width: 100%;
     height: 100%;
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    row-gap: 0px;
-    -webkit-column-gap: 0px;
-            column-gap: 0px;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
-  #home_container header .header_title h1 {
-    font-size: 3em;
+  #home_container main .benefit_sec h2 {
+    color: #50A890;
+    font-family: "Lato", sans-serif;
     text-align: center;
+    padding: 15% 0%;
   }
-  #home_container header .header_title a {
-    padding: 1.5%;
+  #home_container main .benefit_sec h2 a {
+    padding: 2%;
     color: white;
     text-shadow: none;
-    border: 1px solid white;
     text-decoration: none;
     margin-top: 3%;
     -webkit-animation: glow 0.7s ease-in-out infinite alternate;
@@ -202,26 +262,15 @@ html {
       text-shadow: 0 0 10px #fff, 0 0 15px #50A890, 0 0 20px #50A890, 0 0 25px #50A890, 0 0 30px #50A890, 0 0 35px #50A890, 0 0 40px #50A890;
     }
   }
-  #home_container header .header_title a:hover {
-    background-color: #50A890;
+  #home_container main .benefit_sec h2 a:hover {
     cursor: pointer;
   }
-  #home_container main .benefit_sec img {
-    width: 100%;
-    height: 100%;
-  }
-  #home_container main .benefit_sec h2 {
-    color: #50A890;
-    font-family: "Lato", sans-serif;
-    text-align: center;
-    padding: 15% 0%;
-  }
-  #home_container main .benefit_sec article h3 {
+  #home_container main article h3 {
     text-align: center;
     padding: 5% 0% 0% 0%;
     color: #007691;
   }
-  #home_container main .benefit_sec article ul {
+  #home_container main article ul {
     padding: 5% 10%;
     color: #393838;
     text-align: center;
@@ -229,13 +278,13 @@ html {
     list-style-image: url(/img/check-mark1.png);
     width: 80%;
   }
-  #home_container main .benefit_sec article ul li {
+  #home_container main article ul li {
     line-height: 1.5;
   }
-  #home_container main .benefit_sec article ul :nth-child(6) {
+  #home_container main article ul :nth-child(6) {
     padding: 0% 0% 8% 0%;
   }
-  #home_container main .benefit_sec article ul a {
+  #home_container main article ul a {
     text-decoration: none;
     background-color: #007691;
     color: white;
@@ -577,13 +626,12 @@ html {
     height: 3.5em;
   }
   #home_container header {
-    height: 60vh;
+    /* Caption text */
   }
-  #home_container header .header_title h1 {
-    font-size: 4em;
-  }
-  #home_container header .header_title a {
-    font-size: 2em;
+  #home_container header .text {
+    font-size: 65px;
+    font-weight: 700;
+    bottom: 35%;
   }
   #home_container .benefit_sec h2 {
     font-size: 35px;
@@ -714,6 +762,22 @@ html {
   #contact_container nav .menu_ul a:hover {
     background-color: #dffb97;
     border-radius: 5px;
+  }
+  #home_container header {
+    /* Next & previous buttons */
+    /* Caption text */
+  }
+  #home_container header img {
+    width: 100%;
+  }
+  #home_container header .prev,
+  #home_container header .next {
+    display: inline-block;
+  }
+  #home_container header .text {
+    font-size: 70px;
+    bottom: 35%;
+    width: 95%;
   }
   #home_container .benefit_sec div {
     display: -webkit-box;
@@ -875,6 +939,19 @@ html {
   #home_container .review_sec img, #menu_container .review_sec img {
     width: 24%;
     height: 300px;
+  }
+  #home_container header {
+    /* Next & previous buttons */
+    /* Caption text */
+  }
+  #home_container header .prev,
+  #home_container header .next {
+    display: inline-block;
+  }
+  #home_container header .text {
+    font-size: 75px;
+    bottom: 35%;
+    width: 95%;
   }
 }
 

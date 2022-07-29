@@ -32,18 +32,29 @@
 
 
   // HEADER 
+  // #home_container {
+  //   header {
+  //     height: 60vh;
+
+  //     .header_title {
+  //       h1 {
+  //         font-size: 4em;
+  //       }
+
+  //       a {
+  //       font-size: 2em;
+  //       }
+  //     }
+  //   }
+  // }
+
   #home_container {
     header {
-      height: 60vh;
-
-      .header_title {
-        h1 {
-          font-size: 4em;
-        }
-
-        a {
-        font-size: 2em;
-        }
+      /* Caption text */
+      .text {
+        font-size: 65px;
+        font-weight: 700;
+        bottom: 35%;
       }
     }
   }
