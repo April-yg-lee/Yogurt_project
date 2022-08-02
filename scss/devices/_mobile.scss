@@ -7,6 +7,22 @@
   #menu_container,
   #location_container,
   #contact_container {
+
+    .appear {
+      transition: all 0.8s;
+      opacity: 0;
+      transform: translateY(20px);
+  
+    &.inview {
+        opacity: 1;
+        transform: none;
+        @for $i from 1 through 5 {
+          &:nth-child(#{$i}) {
+            transition-delay: $i * 0.1s;
+        }
+      }
+    }
+  }
     nav {
       @include flexBox();
       padding: 5%;
@@ -48,90 +64,24 @@
     }
   }
 
-  // HEADER 
-  // #home_container {
-  //   header {
-  //     width: 100%;
-  //     height: 40vh;
-  //     position: relative;
-
-  //     img {
-  //       width: 100%;
-  //       height: 100%;
-  //       position: absolute;
-  //       object-fit: cover;
-  //       z-index: 0;
-  //       opacity: 0.5;
-  //     }
-
-  //     .header_title {
-  //       z-index: 1;
-  //       color: white;
-  //       text-shadow: $homeHeaderShadowColor;
-  //       background-color: $homeHeaderBGColor;
-  //       width: 100%;
-  //       height: 100%;
-  //       position: absolute;
-
-  //       @include flexBox();
-  //       display: flex;
-  //       flex-direction: column;
-
-  //       // @include flexBox(row, center, center, 0px, 10px);
-
-
-  //       h1 {
-  //         font-size: 3em;
-  //         text-align: center;
-  //       }
-
-  //       a {
-  //         padding: 1.5%;
-  //         color: white;
-  //         text-shadow: none;
-  //         border: 1px solid white;
-  //         text-decoration: none;
-  //         margin-top: 3%;
-  //         animation: glow 0.7s ease-in-out infinite alternate;
-  //       }
-
-  //       @-webkit-keyframes glow {
-  //         from {
-  //           text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px $homeH3Color 0 0 20px $homeH3Color, 0 0 25px $homeH3Color, 0 0 30px $homeH3Color, 0 0 35px $homeH3Color;
-  //         }
-
-  //         to {
-  //           text-shadow: 0 0 10px #fff, 0 0 15px $homeH2Color, 0 0 20px $homeH2Color, 0 0 25px $homeH2Color, 0 0 30px $homeH2Color, 0 0 35px $homeH2Color, 0 0 40px $homeH2Color;
-  //         }
-  //       }
-
-  //         a:hover {
-  //           background-color: $homeH2Color;
-  //           cursor: pointer;
-  //         }
-
-  //     }
-  //   }
-  // }
-
   #home_container {
     header {
 
       /* Slideshow container */
       .slideshow-container {
-        max-width: 1000px;
         position: relative;
-        margin: auto;
       }
 
       /* Hide the images by default */
       .mySlides {
         display: none;
         background-color: $homeHeaderBGColor;
+       
       }
 
       img {
         opacity: 0.5;
+        width: 100%;
       }
 
       /* Next & previous buttons */
@@ -174,6 +124,7 @@
         width: 100%;
         text-align: center;
         text-shadow: $homeHeaderShadowColor;
+        
       }
 
    
@@ -219,6 +170,65 @@
   #home_container {
     main {
       .benefit_sec {
+
+        .btnBody {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .btn {
+            width: 150px;
+            height: 50px;
+            border: 1px solid $homeH3Color;
+            font-size: 20px;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 0;
+            transition: 1s;
+
+            .noselect {
+              -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                 -khtml-user-select: none;
+                   -moz-user-select: none;
+                    -ms-user-select: none;
+                        user-select: none;
+                        text-decoration: none;
+                        text-shadow: 1px 1px $darkGrayColor;
+                        color: $homeH3Color
+            }
+          }
+          
+          .btn::before, .btn::after {
+            position: absolute;
+            background: white;
+            z-index: -1;
+            transition: 1s;
+            content: '';
+          }
+          
+          .btn::before {
+            height: 50px;
+            width: 130px;
+          }
+          
+          .btn::after {
+            width: 150px;
+            height: 30px;
+          }
+          .btn:hover::before {
+            width: 0px;
+          }
+          
+          .btn:hover::after {
+            height: 0px;
+          }
+        }
+        
         img {
           width: 100%;
           height: 100%;
@@ -230,31 +240,9 @@
           text-align: center;
           padding: 15% 0%; 
 
-        a {
-          padding: 2%;
-          color: white;
-          text-shadow: none;
-          text-decoration: none;
-          margin-top: 3%;
-          animation: glow 0.7s ease-in-out infinite alternate;
-        }
-
-        @-webkit-keyframes glow {
-          from {
-            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px $homeH3Color 0 0 20px $homeH3Color, 0 0 25px $homeH3Color, 0 0 30px $homeH3Color, 0 0 35px $homeH3Color;
-          }
-
-          to {
-            text-shadow: 0 0 10px #fff, 0 0 15px $homeH2Color, 0 0 20px $homeH2Color, 0 0 25px $homeH2Color, 0 0 30px $homeH2Color, 0 0 35px $homeH2Color, 0 0 40px $homeH2Color;
+       
           }
         }
-
-          a:hover {
-            cursor: pointer;
-          }
-          }
-        }
-      
 
         article {
 
@@ -270,7 +258,7 @@
             text-align: center;
             list-style: none;
             list-style-image: url(/img/check-mark1.png);
-            width: 80%;
+            width: 100%;
 
             li {
               line-height: 1.5;
@@ -409,6 +397,7 @@
 @media (min-width: 300px) {
   #ourStory_container {
     main {
+
       section {
         img {
           width: 100%;
@@ -464,6 +453,7 @@
 
 @media (min-width: 300px) {
   #menu_container {
+   
     h1 {
       text-align: center;
       font-family: $eachPageStrongFont;
@@ -567,6 +557,7 @@
 @media (min-width: 300px) {
   #contact_container {
     main {
+    
       .required_star {
         color: $navLogoColor;
         font-weight: 600;

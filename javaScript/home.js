@@ -39,15 +39,9 @@ function showSlides(n) {
 //   slideIndex++;
 //   if (slideIndex > slides.length) {slideIndex = 1}
 //   slides[slideIndex-1].style.display = "block";
-//   setTimeout(showSlides, 2000); // Change image every 2 seconds
+//   setTimeout(showSlides, 3000); // Change image every 2 seconds
 // }
 
-window.onload=function(){
-  const upArrow = document.querySelector('.up_arrow');
-  upArrow.addEventListener("click", ()=> {
-    window.scrollTo(0,0);
-});
-}
 
 
 

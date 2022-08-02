@@ -9,7 +9,8 @@
   <title>ODOC Yogurt</title>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="/javaScript/loadHTML.js" defer></script>
-  <script src="/javaScript/functions.js" defer></script>
+  <script src="/javaScript/home.js" defer></script>
+  <script src="/javaScript/everyPage.js" defer></script>
 </head>
 
 <body>
@@ -18,32 +19,23 @@
     <nav></nav>
 
     <!-- HEADER  -->
-
-    <!-- <header>
-      <img src="./img/header06.jpg">
-      <div class="header_title">
-        <h1>FRESH YOGURT EVERYDAY</h1>
-        <a href="/menu.html#order_link"><b>ORDER NOW</b></a>
-      </div>
-    </header> -->
-
-    <header>
+    <header class="appear">
       <!-- Slideshow container -->
       <div class="slideshow-container">
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-          <img src="./img/header06.jpg" style="width:100%">
+          <img src="./img/header06.jpg">
           <div class="text">FRESH YOGURT EVERYDAY</div>
         </div>
 
         <div class="mySlides fade">
-          <img src="./img/header02.jpg" style="width:100%">
+          <img src="./img/header02.jpg">
           <div class="text">FRESH YOGURT EVERYDAY</div>
         </div>
 
         <div class="mySlides fade">
-          <img src="./img/header05.jpg" style="width:100%">
+          <img src="./img/header05.jpg">
           <div class="text">FRESH YOGURT EVERYDAY</div>
         </div>
 
@@ -64,12 +56,16 @@
     <main>
       <!-- BENEFIT SECTION  -->
       <section class="benefit_sec">
-        <h2>BOOST YOUR BODY <br>
+        <h2 class="appear">BOOST YOUR BODY <br>
           WITH ODOC YOGURT <br><br>
-          <a href="/menu.html#order_link"><b>ORDER NOW</b></a>
+          <div class="btnBody appear">
+            <div class="btn">
+              <a class="noselect" href="/menu.html#order_link"><b>ORDER NOW</b></a>
+            </div>
+          </div>
         </h2>
 
-        <div>
+        <div class="appear">
           <img src="./img/yogurt02.jpg">
           <article>
             <h3>Six health benefits of yogurt</h3>
@@ -88,7 +84,7 @@
       </section>
 
       <!-- SECOND SECTION -->
-      <section class="review_sec">
+      <section class="review_sec appear">
       </section>
     </main>
 
