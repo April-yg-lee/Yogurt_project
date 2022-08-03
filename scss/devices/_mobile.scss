@@ -457,7 +457,9 @@
     h1 {
       text-align: center;
       font-family: $eachPageStrongFont;
+      color: $homeH3Color;
     }
+
 
     .order_h1 {
       padding-top: 10vh;
@@ -474,12 +476,18 @@
       .cheese_art {
         padding: 5%;
         border: $menuBorderColor;
+        h2 {
+          font-weight: 400;
+        }
       }
 
       .yogurt_art {
         padding: 5%;
         border: $menuBorderColor;
         border-top: 1px solid transparent;
+        h2 {
+          font-weight: 400;
+        }
       }
     }
 
@@ -524,9 +532,18 @@
 
 @media (min-width: 300px) {
   #location_container {
+    h1 {
+      text-align: center;
+      font-family: $eachPageStrongFont;
+      color: $homeH3Color;
+      padding-bottom: 5%;
+      font-size: 5vh;
+    }
+
     main {
       padding: 5%;
       border: $menuBorderColor;
+
 
 
       .google_map_sec {
@@ -570,6 +587,7 @@
         h2 {
           font-size: 30px;
           font-family: $eachPageStrongFont;
+          color: $homeH3Color;
         }
 
         .contact_greeting {
@@ -626,7 +644,8 @@
         }
 
         input[type=submit]:hover {
-          background-color: $homeH2Color;
+          background-color: $homeH3Color;
+          transition: 0.5s;
           color: white;
           border: 1px solid white;
           cursor: pointer;

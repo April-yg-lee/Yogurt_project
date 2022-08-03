@@ -170,6 +170,9 @@
 
 @media (min-width: 700px) {
   #location_container {
+    h1 {
+      font-size: 7vh;
+    }
     main {
       .detail_info_sec {
         @include flexBox(row, space-around, flex-start);

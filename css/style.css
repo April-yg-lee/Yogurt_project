@@ -567,6 +567,7 @@ html {
   #menu_container h1 {
     text-align: center;
     font-family: "Lato", sans-serif;
+    color: #007691;
   }
   #menu_container .order_h1 {
     padding-top: 10vh;
@@ -582,10 +583,16 @@ html {
     padding: 5%;
     border: 1px dotted #393838;
   }
+  #menu_container .menu_sec .cheese_art h2 {
+    font-weight: 400;
+  }
   #menu_container .menu_sec .yogurt_art {
     padding: 5%;
     border: 1px dotted #393838;
     border-top: 1px solid transparent;
+  }
+  #menu_container .menu_sec .yogurt_art h2 {
+    font-weight: 400;
   }
   #menu_container .order_sec {
     padding: 5%;
@@ -624,6 +631,13 @@ html {
 }
 
 @media (min-width: 300px) {
+  #location_container h1 {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    color: #007691;
+    padding-bottom: 5%;
+    font-size: 5vh;
+  }
   #location_container main {
     padding: 5%;
     border: 1px dotted #393838;
@@ -657,6 +671,7 @@ html {
   #contact_container main .contact_reason h2 {
     font-size: 30px;
     font-family: "Lato", sans-serif;
+    color: #007691;
   }
   #contact_container main .contact_reason .contact_greeting {
     font-size: 20px;
@@ -699,7 +714,9 @@ html {
     border: 1px solid black;
   }
   #contact_container main .contact_message input[type=submit]:hover {
-    background-color: #50A890;
+    background-color: #007691;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     color: white;
     border: 1px solid white;
     cursor: pointer;
@@ -801,6 +818,9 @@ html {
 }
 
 @media (min-width: 700px) {
+  #location_container h1 {
+    font-size: 7vh;
+  }
   #location_container main .detail_info_sec {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1044,6 +1064,13 @@ html {
 }
 
 @media (min-width: 1200px) {
+  #home_container nav,
+  #ourStory_container nav,
+  #menu_container nav,
+  #location_container nav,
+  #contact_container nav {
+    padding: 1% 5% 1% 5%;
+  }
   #home_container header {
     /* Caption text */
   }

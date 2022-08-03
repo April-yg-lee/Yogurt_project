@@ -1,7 +1,17 @@
 
 
-// HEADER for 1200px
+// for 1200px
 @media (min-width: 1200px) {
+ // NAVIGATION 
+ #home_container,
+ #ourStory_container,
+ #menu_container,
+ #location_container,
+ #contact_container {
+   nav {
+     padding: 1% 5% 1% 5%;
+   }
+ }
 
 #home_container {
   header {
