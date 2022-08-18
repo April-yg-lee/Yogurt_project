@@ -7,26 +7,25 @@
   #menu_container,
   #location_container,
   #contact_container {
-    nav {
-      .hamburger_ul {
-        display: none;      
+    .nav {
+      #hamburger {
+        display: none;
       }
-
       .menu_ul {
-        display: flex;
+        display: flex !important;
         justify-content: space-evenly;
         width: 100%;
-        
+        li {
+          list-style: none;
 
-        a {
-          text-decoration: none;
-          color: $darkGrayColor;
-        }
-
-        a:hover {
-          background-color: $navHoverColor;
-          transition: 0.5s;
-          border-radius: 5px;
+          a {
+            text-decoration: none;
+            color: $darkGrayColor;
+          }
+          a:hover {
+            transition: 0.5s;
+            background-color: $navHoverColor;
+          }
         }
       }
     }
