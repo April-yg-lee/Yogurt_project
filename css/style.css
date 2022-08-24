@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -461,7 +462,7 @@ html {
   #home_container main article h3 {
     text-align: center;
     padding: 5% 0% 0% 0%;
-    color: #007691;
+    color: #50A890;
   }
   #home_container main article ul {
     padding: 5% 10%;
@@ -481,10 +482,15 @@ html {
   }
   #home_container main article ul a {
     text-decoration: none;
-    background-color: #007691;
+    background-color: #50A890;
     color: white;
     padding: 2%;
     border-radius: 5px;
+  }
+  #home_container main article ul a:hover {
+    background-color: #007691;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
   }
   #home_container .review_sec,
   #menu_container .review_sec {
@@ -604,7 +610,7 @@ html {
   #location_container footer hr,
   #contact_container footer hr {
     text-align: center;
-    border: 1px double #dffb97;
+    border: 1px double #50A890;
   }
   #home_container footer p,
   #ourStory_container footer p,
@@ -823,6 +829,14 @@ html {
   }
 }
 
+@media (min-width: 600px) {
+  #home_container header .text {
+    font-size: 50px;
+    font-weight: 700;
+    bottom: 32%;
+  }
+}
+
 @media (min-width: 700px) {
   #home_container nav #overlay,
   #ourStory_container nav #overlay,
@@ -979,6 +993,7 @@ html {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     background-color: #e0f9e0;
+    border-radius: 10px;
   }
   #home_container header {
     /* Next & previous buttons */

@@ -1,4 +1,21 @@
 // homepage
+
+// for header text size
+@media (min-width: 600px) {
+  #home_container {
+    header {
+      .text {
+        font-size: 50px;
+        font-weight: 700;
+        bottom: 32%;
+      }
+    }
+  }
+}
+
+
+
+
 @media (min-width: 700px) {
 
   // NAVIGATION 
@@ -13,24 +30,6 @@
      }
     }
   }
-
-
-  // HEADER 
-  // #home_container {
-  //   header {
-  //     height: 60vh;
-
-  //     .header_title {
-  //       h1 {
-  //         font-size: 4em;
-  //       }
-
-  //       a {
-  //       font-size: 2em;
-  //       }
-  //     }
-  //   }
-  // }
 
   #home_container {
     header {

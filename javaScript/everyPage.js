@@ -1,5 +1,5 @@
 window.onload = function () {
-  const upArrow = document.querySelector(".up_arrow");
+  const upArrow = document.querySelector(".up_arrow_mark");
   upArrow.addEventListener("click", () => {
     window.scrollTo(0, 0);
   });

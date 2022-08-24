@@ -308,7 +308,7 @@
           h3 {
             text-align: center;
             padding: 5% 0% 0% 0%;
-            color: $homeH3Color;
+            color: $homeH2Color;
           }
 
           ul {
@@ -329,10 +329,15 @@
 
             a {
               text-decoration: none;
-              background-color: $homeH3Color;
+              background-color: $homeH2Color;
               color: white;
               padding: 2%;
               border-radius: 5px;
+            }
+
+            a:hover {
+              background-color: $homeH3Color;
+              transition: all 0.3s ease-in;
             }
           }
 
