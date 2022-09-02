@@ -1,0 +1,212 @@
+
+
+// homepage
+@media (min-width: 1000px) {
+
+  // NAVIGATION 
+  #home_container,
+  #ourStory_container,
+  #menu_container,
+  #location_container,
+  #contact_container {
+    .nav {
+      #hamburger {
+        display: none;
+      }
+      .menu_ul {
+        display: flex !important;
+        justify-content: space-evenly;
+        width: 100%;
+        li {
+          list-style: none;
+
+          a {
+            text-decoration: none;
+            color: $darkGrayColor;
+          }
+          a:hover {
+            transition: 0.5s;
+            background-color: $navHoverColor;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  // HEADER 
+  #home_container {
+    header {
+
+      img {
+        width: 100%;
+        height: 65vh;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        display: inline-block;
+      }
+      .text {
+        font-size: 5em;
+      }
+    }
+  }
+
+  // FIRST SECTION 
+  #home_container {
+    .benefit_sec {
+
+      div {
+        display: flex;
+
+        img {
+          width: 49%;
+          height: 100%;
+        }
+
+        article {
+          width: 49%;
+
+          h3 {
+            padding-top: 0;
+            font-size: 25px;
+          }
+
+          ul {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+
+  // SECOND SECTION 
+  #home_container,
+  #menu_container {
+    .review_sec {
+      text-align: center;
+
+      h2 {
+        padding: 15% 0% 5% 0%;
+      }
+
+      img {
+        width: 24%;
+        height: 30vh;
+      }
+    }
+  }
+}
+
+
+
+// ourStory page 
+@media (min-width: 1000px) {
+  #ourStory_container {
+    main {
+      h2 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .history_sec, .philosophy_sec {
+        div {
+          @include flexBox(row, center, center);
+
+          img {
+            width: 50%;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+// menu page
+@media (min-width: 1000px) {
+  #menu_container {
+    .menu_sec {
+      display: flex;
+      justify-content: space-evenly;
+
+      .yogurt_art {
+        border-top: $menuBorderColor
+        
+        ;
+      }
+    }
+
+    
+    .order_sec {
+      @include flexBox(row,center);
+      .order_art {
+        width: 80%;
+        .order_div_1, .order_div_2, .order_div_3 {
+          transition: 0.5s ease-in-out;
+        }
+        .order_div_1:hover, .order_div_2:hover, .order_div_3:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+
+
+  }
+}
+
+
+
+
+// location page
+
+@media (min-width: 1000px) {
+  #location_container {
+    main {
+      padding: 3%;
+      justify-content: space-between;
+      section {
+        @include flexBox(row,space-evenly);
+
+        .google_map_sec {
+          width: 60%;
+          height: 50vh;
+        }
+
+        .detail_info_sec {
+          height: 40vh;
+          flex-direction: column;
+          div {
+            font-size: small;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// contact page
+@media (min-width: 1000px) {
+  #contact_container {
+    main {
+      .contact_message {
+        .contact_msg_first_div {
+          display: flex;
+          justify-content: space-between;
+        }
+          input[type=text], input[type=email] {
+            width: 31vw;
+          }
+      }
+    }
+  }
+}

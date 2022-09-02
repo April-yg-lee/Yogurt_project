@@ -7,71 +7,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/style.css">
   <title>ODOC Yogurt</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="/javaScript/loadHTML.js" defer></script>
+  <script src="/javaScript/home.js" defer></script>
+  <script src="/javaScript/everyPage.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/17.0.18/i18next.min.js" type="text/javascript"></script>
+  <script src="/javaScript/languages/langHome.js" defer></script>
 </head>
 
 <body>
-  <!-- NAVIGATION  -->
-  <nav>
-    <ul>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="ourStory.html">Our Story</a></li>
-      <li><a href="menu.html">Menu</a></li>
-    </ul>
-    <ul>
-      <li><a href="home.html">ODOC</a></li>
-    </ul>
-    <ul>
-      <li><img>Hamburger</li>
-    </ul>
-    <ul>
-      <li><a href="location.html">Location</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="order.html">Order</a></li>
-    </ul>
-  </nav>
+  <div id="home_container">
+    <!-- NAVIGATION  -->
+    <nav></nav>
 
-  <header>
-    <div>
-      <h1>FRESH YOGURT EVERYDAY</h1>
-    </div>
-  </header>
+    <!-- HEADER  -->
+    <header class="appear">
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
 
-  <main>
-    <!-- FIRST SECTION  -->
-    <section>
-      <div>
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="./img/header06.jpg">
+          <div class="textDiv">
+          <div class="text" id="text01_1">ODOC YOGURT EVERYDAY</div>
+        </div>
+        </div>
 
+        <div class="mySlides fade">
+          <img src="./img/header02.jpg">
+          <div class="text" id="text01_2">FRESH YOGURT EVERYDAY</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./img/header05.jpg">
+          <div class="text" id="text01_3">TASTY YOGURT EVERYDAY</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-      <h2>BOOST YOUR BODY</h2>
-      <article>
-        <h3>Here are six science-based health benefits of natural yogurt.</h3>
-        <p>
-          <h4>It's rich in important nutrients.</h4>
-          <h4>It's high in protein.</h4>
-          <h4>Some varieties may benefit digestive health.</h4>
-          <h4>It may strengthen your immune system.</h4>
-          <h4>It may benefit heart health.</h4>
-          <h4>It may promote weight management.</h4>
-        </p>
-      </article>
-    </section>
+      <br>
 
-    <!-- SECOND SECTION -->
-    <section>
-      <h2>REVIEWS DON'T LIE</h2>
-      <a href="" target="_blank"><img></a>
-      <a href="" target="_blank"><img></a>
-      <a href="" target="_blank"><img></a>
-    </section>
-  </main>
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </header>
 
-  <!-- FOOTER  -->
-  <footer>
-    <a href="" target="_blank"><img></a>
-    <a href="" target="_blank"><img></a>
-    <a href="" target="_blank"><img></a>
-  </footer>
-  This is the test for second commit
+    <main>
+      <!-- BENEFIT SECTION  -->
+      <section class="benefit_sec">
+        <h2 class="appear"><span id="text02_1">BOOST YOUR BODY</span> <br>
+          <span id="text02_2">WITH ODOC YOGURT</span> <br><br>
+          <div class="btnBody appear">
+            <div class="btn">
+              <a class="noselect" href="/menu.html#order_link"><b><span id="text02_3">ORDER NOW</span></b></a>
+            </div>
+          </div>
+        </h2>
+
+        <div class="appear">
+          <img src="./img/yogurt02.jpg">
+          <article>
+            <h3 id="text03_1">Six health benefits of yogurt</h3>
+            <ul>
+              <li id="text03_2">Rich in important nutrients.</li>
+              <li id="text03_3">High in protein.</li>
+              <li id="text03_4">Good for digestive health.</li>
+              <li id="text03_5">Strengthen your immune system.</li>
+              <li id="text03_6">Benefit healthy blood pressure.</li>
+              <li id="text03_7">Promote weight management.</li>
+              <a href="http://www.mhns.co.kr/news/articleView.html?idxno=411956"
+                id="text03_8" target="_blank">Read News Article</a>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECOND SECTION -->
+      <section class="review_sec appear">
+      </section>
+    </main>
+
+    <!-- FOOTER  -->
+    <footer></footer>
+  </div>
 </body>
 
 </html>

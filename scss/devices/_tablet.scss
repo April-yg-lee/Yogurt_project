@@ -1,0 +1,190 @@
+// homepage
+
+// for header text size
+@media (min-width: 500px) {
+
+#home_container {
+  header {
+    .text {
+      font-size: 3.2em;
+    }
+  }
+}
+}
+
+
+
+@media (min-width: 700px) {
+
+  // NAVIGATION 
+  #home_container,
+  #ourStory_container,
+  #menu_container,
+  #location_container,
+  #contact_container {
+    nav {
+     #overlay {
+      height: 95%;
+     }
+    }
+  }
+
+  #home_container {
+    header {
+      /* Caption text */
+      .text {
+        font-size: 75px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  // FIRST SECTION 
+  #home_container {
+    .benefit_sec {
+
+      h2 {
+        font-size: 35px;
+      }
+
+      article {
+
+        h3 {
+          font-size: 30px;
+        }
+
+        ul {
+          font-size: 23px;
+
+          a {
+            border-radius: 10px;
+          }
+        }
+
+      }
+    }
+  }
+
+  // SECOND SECTION 
+  #home_container,
+  #menu_container {
+    .review_sec {
+
+      h2 {
+        font-size: 35px;
+      }
+
+      img {
+        width: 49%;
+        height: 300px;
+      }
+    }
+  }
+
+  // FOOTER 
+  #home_container,
+  #ourStory_container,
+  #menu_container,
+  #location_container,
+  #contact_container {
+    footer {
+      div {
+        img {
+          width: 35px;
+          height: 35px;
+        }
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+// ourStory page
+@media (min-width: 700px) {
+  #ourStory_container {
+    main {
+      section {
+
+        h2 {
+          font-size: 50px;
+        }
+
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+// menu page
+
+@media (min-width: 700px) {
+  #menu_container {
+    h1 {
+      font-size: 50px;
+    }
+
+    .menu_sec {
+      padding: 5%;
+
+      h2 {
+        font-size: 40px;
+      }
+
+      h3 {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+
+
+
+// location page
+
+@media (min-width: 700px) {
+  #location_container {
+    h1 {
+      font-size: 7vh;
+    }
+    main {
+      .detail_info_sec {
+        @include flexBox(row, space-around, flex-start);
+      }
+    }
+  }
+}
+
+
+
+
+// contact page
+@media (min-width: 700px) {
+  #contact_container {
+    main {
+      .contact_reason {
+        h2 {
+          font-size: 50px;
+        }
+
+        .contact_greeting {
+          font-size: 30px;
+        }
+
+        .contact_message {
+
+          input[type=text],
+          input[type=email] {
+            width: 35vw;
+          }
+        }
+      }
+    }
+  }
+}

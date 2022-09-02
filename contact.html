@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>ODOC Yogurt</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="/javaScript/loadHTML.js" defer></script>
+  <script src="/javaScript/everyPage.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/17.0.18/i18next.min.js" type="text/javascript"></script>
+  <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+  <script src="./javaScript/languages/langContact.js" defer></script>
+</head>
+
+<body>
+  <div id="contact_container">
+    <!-- NAVIGATION  -->
+    <nav></nav>
+
+
+    <main>
+      <section class="contact_reason appear">
+        <h2>Contact Us</h2>
+        <p id='text01_1'class="contact_greeting">
+          How can I help you &#10068;
+        </p>
+        <div class="contact_subject">
+          <p id="text01_2">Subject<span class="required_star">*</span></p>
+          <select>
+            <option name='subject' id="text01_3">Franchise Inquiry</option>
+            <option name='subject' id="text01_4">General Inquiry</option>
+            <option name='subject' id="text01_5">Product Related</option>
+          </select>
+        </div>
+      </section>
+
+      <form action="https://formsubmit.co/april210608@gmail.com" method="POST">
+        <section class="contact_message appear">
+          <div class="contact_msg_first_div">
+            <div>
+              <p id="text01_6">Name<span class="required_star">*</span></p>
+              <input type="text" name='name'required>
+            </div>
+            <div>
+              <p id="text01_7">Email<span class="required_star">*</span></p>
+              <input type="email" name='email' placeholder="ex) madfor@yogurt.com" required>
+            </div>
+          </div>
+          <p id="text01_8">Message<span class="required_star">*</span></p>
+          <textarea rows="5" required name="message"></textarea><br>
+          <!-- <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div> -->
+          <input type="submit" value="SEND MESSAGE">
+        </section>
+      </form>
+    </main>
+
+    <!-- FOOTER  -->
+    <footer></footer>
+  </div>
+</body>
+
+</html>
