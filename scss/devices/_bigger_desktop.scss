@@ -24,34 +24,24 @@
       width: 100%;
       height: 75vh;
     }
-
-    /* Caption text */
     .text {
-      font-size: 75px;
-      bottom: 26%;
-      width: 80%;
-      left: 10%;
+      font-size: 6.2em;
     }
   }
 }
-}
-
-// for header text size
-@media (min-width: 1400px) {
-  #home_container {
-    header {
-      .text {
-        font-size: 90px;
-        font-weight: 700;
-        bottom: 26%;
-      }
-    }
-  }
 }
 
 
 // home page
 @media (min-width: 1500px) {
+
+  #home_container {
+    header {
+      .text {
+        font-size: 6.5em;
+      }
+    }
+  }
 
   // SECOND SECTION 
   #home_container, #menu_container {

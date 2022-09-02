@@ -292,7 +292,6 @@ html {
     transition: opacity 0.2s linear;
   }
   #home_container header {
-    /* Slideshow container */
     /* Hide the images by default */
     /* Next & previous buttons */
     /* Position the "next button" to the right */
@@ -342,11 +341,13 @@ html {
   }
   #home_container header .text {
     color: #f2f2f2;
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: 700;
     position: absolute;
-    bottom: 30%;
     width: 100%;
+    height: 65%;
+    bottom: 0%;
+    line-height: 100%;
     text-align: center;
     text-shadow: 1px 1px #656464;
   }
@@ -832,17 +833,7 @@ html {
 
 @media (min-width: 500px) {
   #home_container header .text {
-    font-size: 50px;
-    font-weight: 700;
-    bottom: 28%;
-  }
-}
-
-@media (min-width: 600px) {
-  #home_container header .text {
-    font-size: 55px;
-    font-weight: 700;
-    bottom: 28%;
+    font-size: 3.2em;
   }
 }
 
@@ -858,9 +849,8 @@ html {
     /* Caption text */
   }
   #home_container header .text {
-    font-size: 65px;
+    font-size: 75px;
     font-weight: 700;
-    bottom: 28%;
   }
   #home_container .benefit_sec h2 {
     font-size: 35px;
@@ -958,14 +948,6 @@ html {
   }
 }
 
-@media (min-width: 800px) {
-  #home_container header .text {
-    font-size: 80px;
-    font-weight: 700;
-    bottom: 28%;
-  }
-}
-
 @media (min-width: 1000px) {
   #home_container .nav #hamburger,
   #ourStory_container .nav #hamburger,
@@ -1014,7 +996,6 @@ html {
   }
   #home_container header {
     /* Next & previous buttons */
-    /* Caption text */
   }
   #home_container header img {
     width: 100%;
@@ -1025,9 +1006,7 @@ html {
     display: inline-block;
   }
   #home_container header .text {
-    font-size: 80px;
-    bottom: 24%;
-    width: 100%;
+    font-size: 5em;
   }
   #home_container .benefit_sec div {
     display: -webkit-box;
@@ -1200,30 +1179,19 @@ html {
   #contact_container nav #overlay {
     display: none;
   }
-  #home_container header {
-    /* Caption text */
-  }
   #home_container header img {
     width: 100%;
     height: 75vh;
   }
   #home_container header .text {
-    font-size: 75px;
-    bottom: 26%;
-    width: 80%;
-    left: 10%;
-  }
-}
-
-@media (min-width: 1400px) {
-  #home_container header .text {
-    font-size: 90px;
-    font-weight: 700;
-    bottom: 26%;
+    font-size: 6.2em;
   }
 }
 
 @media (min-width: 1500px) {
+  #home_container header .text {
+    font-size: 6.5em;
+  }
   #home_container .review_sec img, #menu_container .review_sec img {
     width: 24%;
     height: 300px;
