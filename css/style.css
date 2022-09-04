@@ -340,7 +340,7 @@ html {
     background-color: rgba(0, 0, 0, 0.8);
   }
   #home_container header .text {
-    color: #f2f2f2;
+    color: white;
     font-size: 2.5em;
     font-weight: 700;
     position: absolute;
@@ -349,7 +349,7 @@ html {
     bottom: 0%;
     line-height: 100%;
     text-align: center;
-    text-shadow: 1px 1px #656464;
+    text-shadow: 2px 2px lightgray;
   }
   #home_container header .dot {
     cursor: pointer;
