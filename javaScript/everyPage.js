@@ -111,16 +111,12 @@ window.onload = function () {
       open = !open;
     };
 
-    if (hamburger) {
-      hamburger.addEventListener("click", change);
-    }
+    hamburger.addEventListener("click", change);
 
     const upArrow = document.querySelector(".up_arrow_mark");
-    if (upArrow) {
-      upArrow.addEventListener("click", () => {
-        window.scrollTo(0, 0);
-      });
-    }
+    upArrow.addEventListener("click", () => {
+      window.scrollTo(0, 0);
+    });
   })();
 
   // 페이지 새로 로딩때마다 언어설정 텍스트(네비위치) 처리.
