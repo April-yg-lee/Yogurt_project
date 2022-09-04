@@ -1,7 +1,7 @@
 i18next.init(
     {
         lng: selectedLanguage ? selectedLanguage : "ko",
-        debug: true,
+        debug: false,
         resources: {
             ko: {
                 translation: {

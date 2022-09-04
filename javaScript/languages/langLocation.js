@@ -1,7 +1,7 @@
 i18next.init(
   {
       lng: selectedLanguage ? selectedLanguage : "ko",
-      debug: true,
+      debug: false,
       resources: {
           ko: {
               translation: {
@@ -10,7 +10,6 @@ i18next.init(
                 text01_3: "&#10004; 운영시간",
                 text01_4: "매일 10:00 - 21:30",
                 text02_1: "&#10004; 왕십리점",
-                text02_2: "*오픈준비중",
                 text02_3: "오디오시 요거트<br>서울 왕십리로 21길 4, 2층",
                 text02_4: "&#10004; 운영시간",
                 text02_5: "미정"
@@ -23,7 +22,6 @@ i18next.init(
                 text01_3: "&#10004; Shop Hours",
                 text01_4: "Everyday 10:00 - 21:30",
                 text02_1: "&#10004; Wangsipri Branch",
-                text02_2: "&emsp;&emsp;*Opening Soon*",
                 text02_3: "ODOC Yogurt<br>2nd flr, 4, Wangsimni-ro 21-gil,<br>Seongdong-gu,<br>Seoul, Republic of Korea<br>04715",
                 text02_4: "&#10004; Shop Hours",
                 text02_5: "TBA"
@@ -46,7 +44,6 @@ function updateContent() {
   document.getElementById("text01_3").innerHTML = i18next.t("text01_3");
   document.getElementById("text01_4").innerHTML = i18next.t("text01_4");
   document.getElementById("text02_1").innerHTML = i18next.t("text02_1");
-  document.getElementById("text02_2").innerHTML = i18next.t("text02_2");
   document.getElementById("text02_3").innerHTML = i18next.t("text02_3");
   document.getElementById("text02_4").innerHTML = i18next.t("text02_4");
   document.getElementById("text02_5").innerHTML = i18next.t("text02_5");

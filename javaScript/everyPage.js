@@ -3,10 +3,6 @@ if (sessionStorage.getItem("selectedLanguage")) {
   selectedLanguage = sessionStorage.getItem("selectedLanguage");
 }
 
-// const isKorean = navigator.language === "ko-KR";
-// if (!selectedLanguage) {
-//   selectedLanguage = isKorean ? "ko" : "en";
-// }
 
 i18next.on("languageChanged", () => {
   updateContent();
@@ -98,10 +94,6 @@ function settingForTextOnNavibar() {
 }
 
 window.onload = function () {
-  const upArrow = document.querySelector(".up_arrow_mark");
-  upArrow.addEventListener("click", () => {
-    window.scrollTo(0, 0);
-  });
 
   (() => {
     const hamburger = document.getElementById("hamburger");
@@ -119,12 +111,23 @@ window.onload = function () {
       open = !open;
     };
 
-    hamburger.addEventListener("click", change);
+    if (hamburger) {
+      hamburger.addEventListener("click", change);
+    }
+
+    const upArrow = document.querySelector(".up_arrow_mark");
+    if (upArrow) {
+      upArrow.addEventListener("click", () => {
+        window.scrollTo(0, 0);
+      });
+    }
   })();
 
-
   // 페이지 새로 로딩때마다 언어설정 텍스트(네비위치) 처리.
-  settingForTextOnNavibar();
+  const viewLanguage = document.querySelectorAll(".selectLanguage");
+  if (viewLanguage) {
+    setTimeout(settingForTextOnNavibar, 100);
+  }
 };
 
 const items = document.querySelectorAll(".appear");
