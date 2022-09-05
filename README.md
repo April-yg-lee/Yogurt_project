@@ -5,4 +5,4 @@
 ## Language
 * HTML, SCSS, JavaScript, JQuery
 ## Check it out!
-* WWW.ODOCYOGURT.COM 🍨
+* WWW.ODOCYOGURT.COM 🌱
