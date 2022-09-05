@@ -120,11 +120,10 @@ window.onload = function () {
   })();
 
   // 페이지 새로 로딩때마다 언어설정 텍스트(네비위치) 처리.
-  // const viewLanguage = document.querySelectorAll(".selectLanguage");
-  // if (viewLanguage) {
-    // setTimeout(settingForTextOnNavibar, 100);
-  // }
-  settingForTextOnNavibar();
+  const viewLanguage = document.querySelectorAll(".selectLanguage");
+  if (viewLanguage) {
+    setTimeout(settingForTextOnNavibar, 100);
+  }
 };
 
 const items = document.querySelectorAll(".appear");
