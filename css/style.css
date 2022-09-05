@@ -746,9 +746,6 @@ html {
   #location_container main .appear .opening {
     color: red;
   }
-  #location_container main .branch {
-    opacity: 0.3;
-  }
   #location_container main .google_map_sec {
     width: 100%;
     height: 40vh;

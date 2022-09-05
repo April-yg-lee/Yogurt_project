@@ -93,37 +93,38 @@ function settingForTextOnNavibar() {
   }
 }
 
+let open = false;
 window.onload = function () {
 
   (() => {
-    const hamburger = document.getElementById("hamburger");
-    const menu = document.getElementById("overlay");
-    let open = false;
+    // const hamburger = document.getElementById("hamburger");
+    // const menu = document.getElementById("overlay");
 
-    const change = () => {
-      if (!open) {
-        hamburger.classList.add("open");
-        menu.classList.add("menu");
-      } else {
-        hamburger.classList.remove("open");
-        menu.classList.remove("menu");
-      }
-      open = !open;
-    };
+    // const change = () => {
+    //   if (!open) {
+    //     hamburger.classList.add("open");
+    //     menu.classList.add("menu");
+    //   } else {
+    //     hamburger.classList.remove("open");
+    //     menu.classList.remove("menu");
+    //   }
+    //   open = !open;
+    // };
 
-    hamburger.addEventListener("click", change);
+    // hamburger.addEventListener("click", change);
 
-    const upArrow = document.querySelector(".up_arrow_mark");
-    upArrow.addEventListener("click", () => {
-      window.scrollTo(0, 0);
-    });
+    // const upArrow = document.querySelector(".up_arrow_mark");
+    // upArrow.addEventListener("click", () => {
+    //   window.scrollTo(0, 0);
+    // });
   })();
 
   // 페이지 새로 로딩때마다 언어설정 텍스트(네비위치) 처리.
-  const viewLanguage = document.querySelectorAll(".selectLanguage");
-  if (viewLanguage) {
-    setTimeout(settingForTextOnNavibar, 100);
-  }
+  // const viewLanguage = document.querySelectorAll(".selectLanguage");
+  // if (viewLanguage) {
+    // setTimeout(settingForTextOnNavibar, 100);
+  // }
+  settingForTextOnNavibar();
 };
 
 const items = document.querySelectorAll(".appear");
@@ -140,4 +141,21 @@ const active = function (entries) {
 const io2 = new IntersectionObserver(active);
 for (let i = 0; i < items.length; i++) {
   io2.observe(items[i]);
+}
+
+function toTop() {
+  window.scrollTo(0, 0);
+}
+
+function toggleHamburger() {
+  const menu = document.getElementById("overlay");
+
+  if (!open) {
+    hamburger.classList.add("open");
+    menu.classList.add("menu");
+  } else {
+    hamburger.classList.remove("open");
+    menu.classList.remove("menu");
+  }
+  open = !open;
 }
