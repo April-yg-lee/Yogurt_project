@@ -12,7 +12,6 @@
   <script src="/javaScript/loadHTML.js" defer></script>
   <script src="/javaScript/everyPage.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/17.0.18/i18next.min.js" type="text/javascript"></script>
-  <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
   <script src="./javaScript/languages/langContact.js" defer></script>
 </head>
 
@@ -23,9 +22,10 @@
 
 
     <main>
+      <!-- CONTACT GREETING SECTION  -->
       <section class="contact_reason appear">
         <h2>Contact Us</h2>
-        <p id='text01_1'class="contact_greeting">
+        <p id='text01_1' class="contact_greeting">
           How can I help you &#10068;
         </p>
         <div class="contact_subject">
@@ -38,12 +38,13 @@
         </div>
       </section>
 
+      <!-- CONTACT FORM -->
       <form action="https://formsubmit.co/8f58f2259b5587b6c94c83a73012f238" method="POST">
         <section class="contact_message appear">
           <div class="contact_msg_first_div">
             <div>
               <p id="text01_6">Name<span class="required_star">*</span></p>
-              <input type="text" name='name'required>
+              <input type="text" name='name' required>
             </div>
             <div>
               <p id="text01_7">Email<span class="required_star">*</span></p>
@@ -52,7 +53,6 @@
           </div>
           <p id="text01_8">Message<span class="required_star">*</span></p>
           <textarea rows="5" required name="message"></textarea><br>
-          <!-- <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div> -->
           <input type="submit" value="SEND MESSAGE">
         </section>
       </form>
