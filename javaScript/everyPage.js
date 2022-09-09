@@ -3,12 +3,11 @@ if (sessionStorage.getItem("selectedLanguage")) {
   selectedLanguage = sessionStorage.getItem("selectedLanguage");
 }
 
-
 i18next.on("languageChanged", () => {
   updateContent();
 });
 
-
+// When you click 'language', language's gonna toggle
 function settingForChangingLanguage() {
   const viewLanguage = document.querySelectorAll(".selectLanguage");
   const selectHome = document.querySelectorAll(".selectHome");
@@ -18,7 +17,7 @@ function settingForChangingLanguage() {
   const selectContact = document.querySelectorAll(".selectContact");
 
   if (viewLanguage[0].textContent === "English") {
-    sessionStorage.setItem('selectedLanguage', 'en');
+    sessionStorage.setItem("selectedLanguage", "en");
     selectedLanguage = "en";
     viewLanguage[0].innerHTML = "Korean";
     viewLanguage[1].innerHTML = "Korean";
@@ -32,9 +31,8 @@ function settingForChangingLanguage() {
     selectLocation[1].innerHTML = "Location";
     selectContact[0].innerHTML = "Contact";
     selectContact[1].innerHTML = "Contact";
-
   } else {
-    sessionStorage.setItem('selectedLanguage', 'ko');
+    sessionStorage.setItem("selectedLanguage", "ko");
     selectedLanguage = "ko";
     viewLanguage[0].innerHTML = "English";
     viewLanguage[1].innerHTML = "English";
@@ -48,12 +46,11 @@ function settingForChangingLanguage() {
     selectLocation[1].innerHTML = "위치";
     selectContact[0].innerHTML = "문의하기";
     selectContact[1].innerHTML = "문의하기";
-
-
   }
   i18next.changeLanguage(selectedLanguage);
 }
 
+// When you move to another tab, stay in same language
 function settingForTextOnNavibar() {
   const viewLanguage = document.querySelectorAll(".selectLanguage");
   const selectHome = document.querySelectorAll(".selectHome");
@@ -75,7 +72,6 @@ function settingForTextOnNavibar() {
     selectLocation[1].innerHTML = "Location";
     selectContact[0].innerHTML = "Contact";
     selectContact[1].innerHTML = "Contact";
-
   } else {
     viewLanguage[0].innerHTML = "English";
     viewLanguage[1].innerHTML = "English";
@@ -89,43 +85,20 @@ function settingForTextOnNavibar() {
     selectLocation[1].innerHTML = "위치";
     selectContact[0].innerHTML = "문의하기";
     selectContact[1].innerHTML = "문의하기";
-
   }
 }
 
 let open = false;
+
+// Language setting control whenever loading the page
 window.onload = function () {
-
-  (() => {
-    // const hamburger = document.getElementById("hamburger");
-    // const menu = document.getElementById("overlay");
-
-    // const change = () => {
-    //   if (!open) {
-    //     hamburger.classList.add("open");
-    //     menu.classList.add("menu");
-    //   } else {
-    //     hamburger.classList.remove("open");
-    //     menu.classList.remove("menu");
-    //   }
-    //   open = !open;
-    // };
-
-    // hamburger.addEventListener("click", change);
-
-    // const upArrow = document.querySelector(".up_arrow_mark");
-    // upArrow.addEventListener("click", () => {
-    //   window.scrollTo(0, 0);
-    // });
-  })();
-
-  // 페이지 새로 로딩때마다 언어설정 텍스트(네비위치) 처리.
   const viewLanguage = document.querySelectorAll(".selectLanguage");
   if (viewLanguage) {
     setTimeout(settingForTextOnNavibar, 100);
   }
 };
 
+// Fade in-out whenever scroll up and down
 const items = document.querySelectorAll(".appear");
 
 const active = function (entries) {
@@ -142,10 +115,12 @@ for (let i = 0; i < items.length; i++) {
   io2.observe(items[i]);
 }
 
+// Top-up menu control
 function toTop() {
   window.scrollTo(0, 0);
 }
 
+// Toggle hamburger menu
 function toggleHamburger() {
   const menu = document.getElementById("overlay");
 

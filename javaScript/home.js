@@ -1,5 +1,7 @@
 let slideIndex = 1;
 showSlides(slideIndex);
+
+// change the slide every 3 seconds
 setInterval(timeSlides, 3000);
 
 // Next/previous controls
