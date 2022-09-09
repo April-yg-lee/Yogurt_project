@@ -135,12 +135,6 @@ html {
   #location_container nav #hamburger,
   #contact_container nav #hamburger {
     margin: 4%;
-  }
-  #home_container nav #hamburger,
-  #ourStory_container nav #hamburger,
-  #menu_container nav #hamburger,
-  #location_container nav #hamburger,
-  #contact_container nav #hamburger {
     opacity: 0.5;
     cursor: pointer;
     -webkit-transition: opacity 0.25s linear;
@@ -422,7 +416,8 @@ html {
     text-decoration: none;
     color: #cb0238;
   }
-  #home_container main .benefit_sec .btnBody .btn::before, #home_container main .benefit_sec .btnBody .btn::after {
+  #home_container main .benefit_sec .btnBody .btn::before,
+  #home_container main .benefit_sec .btnBody .btn::after {
     position: absolute;
     background: white;
     z-index: -1;

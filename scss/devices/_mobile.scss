@@ -12,21 +12,23 @@
       transition: all 0.8s;
       opacity: 0;
       transform: translateY(20px);
-  
-    &.inview {
+
+      &.inview {
         opacity: 1;
         transform: none;
+
         @for $i from 1 through 5 {
           &:nth-child(#{$i}) {
             transition-delay: $i * 0.1s;
+          }
         }
       }
     }
-  }
+
     nav {
-     
+
       background-color: white;
-      
+
       .nav {
         width: 100%;
         background-color: white;
@@ -36,17 +38,15 @@
         position: sticky;
         top: 0;
         z-index: 3;
-        .menu_ul { 
-         display: none;
+
+        .menu_ul {
+          display: none;
         }
       }
-      
-      
+
+
       #hamburger {
         margin: 4%;
-      }
-      
-      #hamburger {
         opacity: 0.5;
         cursor: pointer;
         transition: opacity 0.25s linear;
@@ -59,7 +59,7 @@
       #hamburger:hover {
         opacity: 1;
       }
-      
+
       #hamburger div,
       #hamburger div:after,
       #hamburger div:before {
@@ -69,33 +69,33 @@
         height: clamp(0.4rem, 0.3vw + 0.1vw, 2rem);
         transition: all 0.15s linear;
       }
-      
+
       #hamburger div:before,
       #hamburger div:after {
         content: "";
         position: absolute;
       }
-      
+
       #hamburger div:before {
         transform: translateY(-200%);
       }
-      
+
       #hamburger div:after {
         transform: translateY(200%);
       }
-      
+
       #hamburger.open div {
         background: transparent;
       }
-      
+
       #hamburger.open div:before {
         transform: rotate(45deg);
       }
-      
+
       #hamburger.open div:after {
         transform: rotate(-45deg);
       }
-      
+
       #overlay {
         position: fixed;
         width: 90%;
@@ -109,11 +109,11 @@
         justify-content: center;
         align-items: center;
       }
-      
+
       #overlay.menu {
         transform: translateY(0%);
       }
-      
+
       #overlay a {
         text-decoration: none;
         color: $homeH2Color;
@@ -172,7 +172,7 @@
         background-color: rgba(0, 0, 0, 0.8);
       }
 
-  
+
       /* Caption text */
       .text {
         color: white;
@@ -187,7 +187,7 @@
         text-shadow: $homeHeaderShadowColor;
       }
 
-   
+
 
       /* The dots/bullets/indicators */
       .dot {
@@ -252,42 +252,44 @@
 
             .noselect {
               -webkit-touch-callout: none;
-                -webkit-user-select: none;
-                 -khtml-user-select: none;
-                   -moz-user-select: none;
-                    -ms-user-select: none;
-                        user-select: none;
-                        text-decoration: none;
-                        color: rgb(203, 2, 56);
+              -webkit-user-select: none;
+              -khtml-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+              text-decoration: none;
+              color: rgb(203, 2, 56);
             }
           }
-          
-          .btn::before, .btn::after {
+
+          .btn::before,
+          .btn::after {
             position: absolute;
             background: white;
             z-index: -1;
             transition: 1s;
             content: '';
           }
-          
+
           .btn::before {
             height: 50px;
             width: 130px;
           }
-          
+
           .btn::after {
             width: 150px;
             height: 30px;
           }
+
           .btn:hover::before {
             width: 0px;
           }
-          
+
           .btn:hover::after {
             height: 0px;
           }
         }
-        
+
         img {
           width: 100%;
           height: 100%;
@@ -297,52 +299,52 @@
           color: $homeH2Color;
           font-family: $eachPageStrongFont;
           text-align: center;
-          padding: 15% 0%; 
+          padding: 15% 0%;
 
-       
+
+        }
+      }
+
+      article {
+
+        h3 {
+          text-align: center;
+          padding: 5% 0% 0% 0%;
+          color: $homeH2Color;
+        }
+
+        ul {
+          padding: 5% 10%;
+          color: $homeUlColor;
+          text-align: center;
+          list-style: none;
+          list-style-image: url(/img/check-mark1.png);
+          width: 100%;
+
+          li {
+            align-items: center;
+          }
+
+          :nth-child(6) {
+            padding: 0% 0% 8% 0%;
+          }
+
+          a {
+            text-decoration: none;
+            background-color: $homeH2Color;
+            color: white;
+            padding: 2%;
+            border-radius: 5px;
+          }
+
+          a:hover {
+            background-color: $homeH3Color;
+            transition: all 0.3s ease-in;
           }
         }
 
-        article {
+      }
 
-          h3 {
-            text-align: center;
-            padding: 5% 0% 0% 0%;
-            color: $homeH2Color;
-          }
-
-          ul {
-            padding: 5% 10%;
-            color: $homeUlColor;
-            text-align: center;
-            list-style: none;
-            list-style-image: url(/img/check-mark1.png);
-            width: 100%;
-            
-            li {
-              align-items: center;
-            }
-
-            :nth-child(6) {
-              padding: 0% 0% 8% 0%;
-            }
-
-            a {
-              text-decoration: none;
-              background-color: $homeH2Color;
-              color: white;
-              padding: 2%;
-              border-radius: 5px;
-            }
-
-            a:hover {
-              background-color: $homeH3Color;
-              transition: all 0.3s ease-in;
-            }
-          }
-
-        }
-      
     }
   }
 
@@ -517,7 +519,7 @@
 
 @media (min-width: 300px) {
   #menu_container {
-   
+
     h1 {
       text-align: center;
       font-family: $eachPageStrongFont;
@@ -540,6 +542,7 @@
       .cheese_art {
         padding: 5%;
         border: $menuBorderColor;
+
         h2 {
           font-weight: 400;
         }
@@ -549,6 +552,7 @@
         padding: 5%;
         border: $menuBorderColor;
         border-top: 1px solid transparent;
+
         h2 {
           font-weight: 400;
         }
@@ -605,7 +609,7 @@
 
     main {
       padding: 5%;
-      
+
       .appear {
         border: $menuBorderColor;
         padding: 3%;
@@ -615,7 +619,7 @@
           color: red;
         }
       }
-    
+
       .google_map_sec {
         width: 100%;
         height: 40vh;
@@ -644,7 +648,7 @@
 @media (min-width: 300px) {
   #contact_container {
     main {
-    
+
       .required_star {
         color: $navLogoColor;
         font-weight: 600;
