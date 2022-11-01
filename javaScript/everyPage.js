@@ -88,8 +88,6 @@ function settingForTextOnNavibar() {
   }
 }
 
-let open = false;
-
 // Language setting control whenever loading the page
 window.onload = function () {
   const viewLanguage = document.querySelectorAll(".selectLanguage");
@@ -121,6 +119,7 @@ function toTop() {
 }
 
 // Toggle hamburger menu
+let open = false;
 function toggleHamburger() {
   const menu = document.getElementById("overlay");
 

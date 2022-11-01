@@ -1,34 +1,34 @@
-
-
 // for 1200px
 @media (min-width: 1200px) {
- // NAVIGATION 
- #home_container,
- #ourStory_container,
- #menu_container,
- #location_container,
- #contact_container {
-   nav {
-     padding: 1% 5% 1% 5%;
-     
-     #overlay {
-      display: none;
-     }
-   }
- }
 
-#home_container {
-  header {
+  // NAVIGATION 
+  #home_container,
+  #ourStory_container,
+  #menu_container,
+  #location_container,
+  #contact_container {
+    nav {
+      padding: 1% 5% 1% 5%;
 
-    img {
-      width: 100%;
-      height: 75vh;
-    }
-    .text {
-      font-size: 6.2em;
+      #overlay {
+        display: none;
+      }
     }
   }
-}
+
+  #home_container {
+    header {
+
+      img {
+        width: 100%;
+        height: 75vh;
+      }
+
+      .text {
+        font-size: 6.2em;
+      }
+    }
+  }
 }
 
 
@@ -44,14 +44,15 @@
   }
 
   // SECOND SECTION 
-  #home_container, #menu_container {
-  .review_sec {
-    img {
-      width: 24%;
-      height: 300px;
+  #home_container,
+  #menu_container {
+    .review_sec {
+      img {
+        width: 24%;
+        height: 300px;
+      }
     }
   }
-}
 
 }
 
@@ -60,22 +61,24 @@
 
   // SECOND SECTION 
   #ourStory_container {
-  main {
-    section {
-  
-      h2 {
-        font-size: 60px;
+    main {
+      section {
+
+        h2 {
+          font-size: 60px;
+        }
+
+        p {
+          font-size: 25px;
+        }
       }
-      p {
-        font-size: 25px;
+
+      img {
+        width: 24%;
+        height: 300px;
       }
-    }
-    img {
-      width: 24%;
-      height: 300px;
     }
   }
-}
 }
 
 
@@ -86,14 +89,17 @@
   #location_container {
     main {
       padding: 3%;
+
       section {
         .google_map_sec {
           height: 60vh;
         }
+
         .detail_info_sec {
           justify-content: space-evenly;
+
           div {
-            font-size:large;
+            font-size: large;
           }
         }
       }
@@ -108,10 +114,13 @@
   #contact_container {
     main {
       padding: 0% 20%;
+
       .contact_message {
-          input[type=text], input[type=email] {
-            width: 23vw;
-          }
+
+        input[type=text],
+        input[type=email] {
+          width: 23vw;
+        }
       }
     }
   }

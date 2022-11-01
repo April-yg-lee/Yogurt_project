@@ -3,13 +3,13 @@
 // for header text size
 @media (min-width: 500px) {
 
-#home_container {
-  header {
-    .text {
-      font-size: 3.2em;
+  #home_container {
+    header {
+      .text {
+        font-size: 3.2em;
+      }
     }
   }
-}
 }
 
 
@@ -23,14 +23,15 @@
   #location_container,
   #contact_container {
     nav {
-     #overlay {
-      height: 95%;
-     }
+      #overlay {
+        height: 95%;
+      }
     }
   }
 
   #home_container {
     header {
+
       /* Caption text */
       .text {
         font-size: 75px;
@@ -153,6 +154,7 @@
     h1 {
       font-size: 7vh;
     }
+
     main {
       .detail_info_sec {
         @include flexBox(row, space-around, flex-start);
